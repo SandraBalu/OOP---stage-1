@@ -1,9 +1,5 @@
 package commands;
 
-public class ShowPreferredSongsCommand extends Command{
-    public void execute() {
-        if (this instanceof ShowPreferredSongsCommand) {
-            ShowPreferredSongsCommand showPreferredSongsCommand = (ShowPreferredSongsCommand) this;
-        }
-    }
+public final class ShowPreferredSongsCommand extends Command {
+
 }

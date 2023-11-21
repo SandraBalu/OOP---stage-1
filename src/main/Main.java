@@ -81,31 +81,36 @@ public final class Main {
         ArrayNode outputs = objectMapper.createArrayNode();
 
         // TODO add your implementation
-        String file_path = CheckerConstants.TESTS_PATH + filePathInput;
+        String filePath = CheckerConstants.TESTS_PATH + filePathInput;
         ObjectMapper objectMapper1 = new ObjectMapper();
 
         ProcessCommands processCommands = new ProcessCommands();
         ArrayList<String> matching = new ArrayList<>();
 
-        List<JsonNode> jsonNodeList = objectMapper1.readValue(new File(file_path), objectMapper1.getTypeFactory().constructCollectionType(List.class, JsonNode.class));
+        List<JsonNode> jsonNodeList = objectMapper1.readValue(new File(filePath),
+                objectMapper1.getTypeFactory().constructCollectionType(List.class,
+                        JsonNode.class));
 
         for (JsonNode jsonNode : jsonNodeList) {
             TypeFactory typeFactory = objectMapper1.getTypeFactory();
 
             switch (jsonNode.get("command").textValue()) {
                 case "createPlaylist":
-                    CreatePlaylistCommand createPlaylistCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(CreatePlaylistCommand.class));
+                    CreatePlaylistCommand createPlaylist = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(CreatePlaylistCommand.class));
 
                     break;
                 case "search":
-                    SearchCommand searchCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(SearchCommand.class));
-                    matching = processCommands.ExecuteSearch(searchCommand, library);
+                    SearchCommand searchCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(SearchCommand.class));
+                    matching = processCommands.executeSearch(searchCommand, library);
 
                     ObjectNode matchingResults = objectMapper.createObjectNode();
                     matchingResults.put("command", "search");
                     matchingResults.put("user", searchCommand.getUsername());
-                    matchingResults.put("timestamp",searchCommand.getTimestamp());
-                    matchingResults.put("message", "Search returned " +  matching.size() + " results");
+                    matchingResults.put("timestamp", searchCommand.getTimestamp());
+                    matchingResults.put("message", "Search returned "
+                                            + matching.size() + " results");
 
                     ArrayNode matchingArrayNode = matchingResults.putArray("results");
                     for (String song : matching) {
@@ -114,62 +119,79 @@ public final class Main {
                     outputs.add(matchingResults);
                     break;
                 case "load":
-                    LoadCommand loadCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(LoadCommand.class));
+                    LoadCommand loadCommand = objectMapper1.treeToValue(jsonNode,
+                                typeFactory.constructType(LoadCommand.class));
                     break;
                 case "select":
-                    SelectCommand selectCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(SelectCommand.class));
-                    String select = processCommands.ExecuteSelect(matching, selectCommand);
+                    SelectCommand selectCommand = objectMapper1.treeToValue(jsonNode,
+                                typeFactory.constructType(SelectCommand.class));
+                    String select = processCommands.executeSelect(matching, selectCommand);
                     ObjectNode selectedResult = objectMapper.createObjectNode();
                     selectedResult.put("command", "select");
                     selectedResult.put("user", selectCommand.getUsername());
-                    selectedResult.put("timestamp",selectCommand.getTimestamp());
+                    selectedResult.put("timestamp", selectCommand.getTimestamp());
                     selectedResult.put("message", select);
                     outputs.add(selectedResult);
 
                     break;
                 case "repeat":
-                    RepeatCommand repeatCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(RepeatCommand.class));
+                    RepeatCommand repeatCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(RepeatCommand.class));
                     break;
                 case "shuffle":
-                    ShuffleCommand shuffleCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(ShuffleCommand.class));
+                    ShuffleCommand shuffleCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(ShuffleCommand.class));
                     break;
                 case "forward":
-                    ForwardCommand forwardCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(ForwardCommand.class));
+                    ForwardCommand forwardCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(ForwardCommand.class));
                 case "backward":
-                    BackwardCommand backwardCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(BackwardCommand.class));
+                    BackwardCommand backwardCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(BackwardCommand.class));
                     break;
                 case "like":
-                    LikeCommand likeCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(LikeCommand.class));
+                    LikeCommand likeCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(LikeCommand.class));
                     break;
                 case "next":
-                    NextCommand nextCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(NextCommand.class));
+                    NextCommand nextCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(NextCommand.class));
                     break;
                 case "prev":
-                    PrevCommand prevCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(PrevCommand.class));
+                    PrevCommand prevCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(PrevCommand.class));
                     break;
                 case "addRemoveInPlaylist":
-                    AddRemoveInPlaylistCommand addRemoveInPlaylistCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(AddRemoveInPlaylistCommand.class));
+                    AddRemoveInPlaylistCommand addRmInPlaylist = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(AddRemoveInPlaylistCommand.class));
                     break;
                 case "status":
-                    StatusCommand statusCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(StatusCommand.class));
+                    StatusCommand statusCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(StatusCommand.class));
                     break;
                 case "switchVisibility":
-                    SwitchVisibilityCommand switchVisibilityCommandw = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(SwitchVisibilityCommand.class));
+                    SwitchVisibilityCommand switchVisibility = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(SwitchVisibilityCommand.class));
                     break;
                 case "followPlaylist":
-                    FollowPlaylistCommand followPlaylistCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(FollowPlaylistCommand.class));
+                    FollowPlaylistCommand followPlaylist = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(FollowPlaylistCommand.class));
                     break;
                 case "showPlaylist":
-                    ShowPlaylistCommand showPlaylistCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(ShowPlaylistCommand.class));
+                    ShowPlaylistCommand showPlaylistCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(ShowPlaylistCommand.class));
                     break;
                 case "showPreferredSong":
-                    ShowPreferredSongsCommand showPreferredSongsCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(ShowPreferredSongsCommand.class));
+                    ShowPreferredSongsCommand preferredSongs = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(ShowPreferredSongsCommand.class));
                     break;
                 case "getTop5Songs":
-                    GetTop5SongsCommand getTop5SongsCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(GetTop5SongsCommand.class));
+                    GetTop5SongsCommand getTop5SongsCommand = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(GetTop5SongsCommand.class));
                     break;
                 case "getTop5Playlists":
-                    GetTop5PlaylistsCommand getTop5PlaylistsCommand = objectMapper1.treeToValue(jsonNode, typeFactory.constructType(GetTop5PlaylistsCommand.class));
+                    GetTop5PlaylistsCommand getTop5Playlists = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(GetTop5PlaylistsCommand.class));
                     break;
                 default:
                     break;

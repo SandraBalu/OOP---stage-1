@@ -1,6 +1,6 @@
 package commands;
 
-public class SelectCommand extends Command {
+public final class SelectCommand extends Command {
 
     private int itemNumber;
 
@@ -8,17 +8,8 @@ public class SelectCommand extends Command {
         return itemNumber;
     }
 
-    public void setItemNumber(int itemNumber) {
+    public void setItemNumber(final int itemNumber) {
         this.itemNumber = itemNumber;
     }
 
-    public void execute() {
-        if (this instanceof SelectCommand) {
-            SelectCommand selectCommand= (SelectCommand) this;
-        }
-    }
-    @Override
-    public String toString() {
-        return super.toString() + ", ItemNumber: " + itemNumber;
-    }
 }

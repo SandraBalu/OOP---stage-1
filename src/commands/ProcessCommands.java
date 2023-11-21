@@ -7,8 +7,12 @@ import fileio.input.SongInput;
 import java.util.ArrayList;
 
 public class ProcessCommands {
-
-    public ArrayList<String> ExecuteSearch(SearchCommand searchCommand, LibraryInput library) {
+    private static final int MAGIC_NUMBER = 5;
+    /**
+     * method used to execute search command
+     */
+    public final ArrayList<String> executeSearch(final SearchCommand searchCommand,
+                                                 final LibraryInput library) {
         ArrayList<String> matching = new ArrayList<>();
         Filter filters = searchCommand.getFilters();
         int index = 0;
@@ -21,7 +25,8 @@ public class ProcessCommands {
                 if (filters.getName() != null) {
                     index = 0;
                     for (SongInput song : songs) {
-                        if (song.getName().startsWith(filters.getName()) && index < 5) {
+                        if (song.getName().startsWith(filters.getName())
+                                && index < MAGIC_NUMBER) {
                             matching.add(song.getName());
                             index++;
                         }
@@ -32,7 +37,8 @@ public class ProcessCommands {
                 if (filters.getAlbum() != null) {
                     index = 0;
                     for (SongInput song : songs) {
-                        if (song.getAlbum().equalsIgnoreCase(filters.getAlbum()) && index < 5) {
+                        if (song.getAlbum().equalsIgnoreCase(filters.getAlbum())
+                                && index < MAGIC_NUMBER) {
                             matching.add(song.getName());
                             index++;
                         }
@@ -43,7 +49,8 @@ public class ProcessCommands {
                 if (filters.getArtist() != null) {
                     index = 0;
                     for (SongInput song : songs) {
-                        if (song.getArtist().equalsIgnoreCase(filters.getArtist()) && index < 5) {
+                        if (song.getArtist().equalsIgnoreCase(filters.getArtist())
+                                && index < MAGIC_NUMBER) {
                             matching.add(song.getName());
                             index++;
                         }
@@ -51,10 +58,12 @@ public class ProcessCommands {
                     return matching;
                 }
 
-                if (filters.getTags() != null && !filters.getTags().isEmpty() && index < 5) {
+                if (filters.getTags() != null && !filters.getTags().isEmpty()
+                        && index < MAGIC_NUMBER) {
                     index = 0;
                     for (SongInput song : songs) {
-                        if (song.getTags().containsAll(filters.getTags()) && index < 5) {
+                        if (song.getTags().containsAll(filters.getTags())
+                                && index < MAGIC_NUMBER) {
                             matching.add(song.getName());
                             index++;
                         }
@@ -65,7 +74,8 @@ public class ProcessCommands {
                 if (filters.getLyrics() != null) {
                     index = 0;
                     for (SongInput song : songs) {
-                        if (song.getLyrics().contains(filters.getLyrics()) && index < 5) {
+                        if (song.getLyrics().contains(filters.getLyrics())
+                                && index < MAGIC_NUMBER) {
                             matching.add(song.getName());
                             index++;
                         }
@@ -76,7 +86,8 @@ public class ProcessCommands {
                 if (filters.getGenre() != null) {
                     index = 0;
                     for (SongInput song : songs) {
-                        if (song.getGenre().equalsIgnoreCase(filters.getGenre()) && index < 5){
+                        if (song.getGenre().equalsIgnoreCase(filters.getGenre())
+                                && index < MAGIC_NUMBER) {
                             matching.add(song.getName());
                             index++;
                         }
@@ -86,20 +97,20 @@ public class ProcessCommands {
 
                 if (filters.getReleaseYear() != null) {
                     index = 0;
-                    String ReleaseYear = filters.getReleaseYear();
-                    String sign = ReleaseYear.substring(0, 1);
-                    String yearStr = ReleaseYear.substring(1);
+                    String releaseYear = filters.getReleaseYear();
+                    String sign = releaseYear.substring(0, 1);
+                    String yearStr = releaseYear.substring(1);
                     //matching.add(yearStr);
                     int year = Integer.parseInt(yearStr);
                     for (SongInput song : songs) {
                         if (sign.equals("<")) {
-                            if (song.getReleaseYear() < year && index < 5) {
+                            if (song.getReleaseYear() < year && index < MAGIC_NUMBER) {
                                 matching.add(song.getName());
                                 index++;
                             }
                         }
                         if (sign.equals(">")) {
-                            if (song.getReleaseYear() > year && index < 5) {
+                            if (song.getReleaseYear() > year && index < MAGIC_NUMBER) {
                                 matching.add(song.getName());
                                 index++;
                             }
@@ -111,15 +122,16 @@ public class ProcessCommands {
             }
 
         } else if (searchCommand.getType().equals("playlist")) {
-
+            return matching;
 
         } else if (searchCommand.getType().equals("podcast")) {
-            ArrayList<PodcastInput> Podcasts = library.getPodcasts();
+            ArrayList<PodcastInput> podcastArray = library.getPodcasts();
 
             if (filters.getOwner() != null) {
                 index = 0;
-                for (PodcastInput podcast : Podcasts) {
-                    if(podcast.getOwner().equalsIgnoreCase(filters.getOwner()) && index < 5) {
+                for (PodcastInput podcast : podcastArray) {
+                    if (podcast.getOwner().equalsIgnoreCase(filters.getOwner())
+                            && index < MAGIC_NUMBER) {
                         matching.add(podcast.getName());
                         index++;
                     }
@@ -128,8 +140,8 @@ public class ProcessCommands {
 
             if (filters.getName() != null) {
                 index = 0;
-                for (PodcastInput podcast : Podcasts) {
-                    if (podcast.getName().startsWith(filters.getName()) && index < 5) {
+                for (PodcastInput podcast : podcastArray) {
+                    if (podcast.getName().startsWith(filters.getName()) && index < MAGIC_NUMBER) {
                         matching.add(podcast.getName());
                         index++;
                     }
@@ -137,12 +149,15 @@ public class ProcessCommands {
                 return matching;
             }
         }
-
         return matching;
 
     }
 
-    public String ExecuteSelect(ArrayList<String> matching, SelectCommand selectCommand) {
+    /**
+     * method used to execute select command
+     */
+    public String executeSelect(final ArrayList<String> matching,
+                                final SelectCommand selectCommand) {
         if (matching == null) {
             return "Please conduct a search before making a selection.";
         }
