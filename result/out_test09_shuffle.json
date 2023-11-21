@@ -65,25 +65,13 @@
   "timestamp" : 650,
   "message" : "Successfully selected Begin Again."
 }, {
-  "command" : "search",
-  "user" : "bob35",
-  "timestamp" : 700,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 710,
-  "message" : "The selected ID is too high."
-}, {
-  "command" : "search",
-  "user" : "bob35",
-  "timestamp" : 2351,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Successfully selected Begin Again."
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 2352,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Begin Again."
 } ]

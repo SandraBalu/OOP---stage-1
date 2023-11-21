@@ -59,36 +59,18 @@
   "timestamp" : 890,
   "message" : "Successfully selected Start Me Up."
 }, {
-  "command" : "search",
-  "user" : "carol19",
-  "timestamp" : 1000,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1010,
-  "message" : "The selected ID is too high."
-}, {
-  "command" : "search",
-  "user" : "david27",
-  "timestamp" : 1200,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Successfully selected Start Me Up."
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1210,
-  "message" : "The selected ID is too high."
-}, {
-  "command" : "search",
-  "user" : "emily30",
-  "timestamp" : 1300,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Successfully selected Start Me Up."
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1310,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Start Me Up."
 } ]

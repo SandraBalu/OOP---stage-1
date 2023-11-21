@@ -65,14 +65,8 @@
   "timestamp" : 1023,
   "message" : "Successfully selected Dream Chaser."
 }, {
-  "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 1026,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 1027,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Dream Chaser."
 } ]

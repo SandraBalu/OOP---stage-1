@@ -76,36 +76,18 @@
   "timestamp" : 2190,
   "message" : "Successfully selected Bohemian Rhapsody."
 }, {
-  "command" : "search",
-  "user" : "emily30",
-  "timestamp" : 2460,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2490,
-  "message" : "The selected ID is too high."
-}, {
-  "command" : "search",
-  "user" : "bob35",
-  "timestamp" : 2565,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Successfully selected Bohemian Rhapsody."
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 2580,
-  "message" : "The selected ID is too high."
-}, {
-  "command" : "search",
-  "user" : "david27",
-  "timestamp" : 2765,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Successfully selected Bohemian Rhapsody."
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 2810,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Bohemian Rhapsody."
 } ]

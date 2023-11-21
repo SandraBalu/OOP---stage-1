@@ -54,14 +54,8 @@
   "timestamp" : 3240,
   "message" : "Successfully selected Happier."
 }, {
-  "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 3255,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 3260,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Happier."
 } ]

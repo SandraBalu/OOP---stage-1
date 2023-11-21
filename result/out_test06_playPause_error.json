@@ -18,12 +18,6 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 3375,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
-  "command" : "search",
-  "user" : "emily30",
   "timestamp" : 3415,
   "message" : "Search returned 5 results",
   "results" : [ "The Man", "Delicate", "Love Story", "Blank Space", "Begin Again" ]
@@ -44,16 +38,10 @@
   "timestamp" : 3860,
   "message" : "Successfully selected Shape of You."
 }, {
-  "command" : "search",
-  "user" : "emily30",
-  "timestamp" : 4015,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 4060,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Shape of You."
 }, {
   "command" : "search",
   "user" : "emily30",

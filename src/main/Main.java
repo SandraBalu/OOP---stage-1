@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 
 import commands.*;
@@ -83,7 +82,12 @@ public final class Main {
         // TODO add your implementation
         String filePath = CheckerConstants.TESTS_PATH + filePathInput;
         ObjectMapper objectMapper1 = new ObjectMapper();
-        ArrayList<String> matching = new ArrayList<>();
+        ArrayList<SongInput> matchingSongs = new ArrayList<>();
+        ArrayList<PodcastInput> matchingPodcasts = new ArrayList<>();
+        SongInput currentSong = new SongInput();
+        PodcastInput currentPodcast = new PodcastInput();
+        // 0 - no search, 1 - search song, 2 - search podcast
+        int lastSearch = 0;
 
         List<JsonNode> jsonNodeList = objectMapper1.readValue(new File(filePath),
                 objectMapper1.getTypeFactory().constructCollectionType(List.class,
@@ -101,35 +105,34 @@ public final class Main {
                 case "search":
                     SearchCommand searchCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(SearchCommand.class));
-                    matching = searchCommand.executeSearch(searchCommand, library);
 
-                    ObjectNode matchingResults = objectMapper.createObjectNode();
-                    matchingResults.put("command", "search");
-                    matchingResults.put("user", searchCommand.getUsername());
-                    matchingResults.put("timestamp", searchCommand.getTimestamp());
-                    matchingResults.put("message", "Search returned "
-                                            + matching.size() + " results");
-
-                    ArrayNode matchingArrayNode = matchingResults.putArray("results");
-                    for (String song : matching) {
-                        matchingArrayNode.add(song);
+                    if (searchCommand.getType().equals("song")) {
+                        matchingSongs = searchCommand.searchSong(searchCommand, library);
+                        lastSearch = 1;
                     }
-                    outputs.add(matchingResults);
+                    if (searchCommand.getType().equals("podcast")) {
+                        matchingPodcasts = searchCommand.searchPodcast(searchCommand, library);
+                        lastSearch = 2;
+                    }
+                    searchCommand.displaySearch(searchCommand, library, outputs,
+                            objectMapper, matchingSongs, matchingPodcasts);
+
                     break;
                 case "load":
                     LoadCommand loadCommand = objectMapper1.treeToValue(jsonNode,
                                 typeFactory.constructType(LoadCommand.class));
+
                     break;
                 case "select":
                     SelectCommand selectCommand = objectMapper1.treeToValue(jsonNode,
                                 typeFactory.constructType(SelectCommand.class));
-                    String select = selectCommand.executeSelect(matching, selectCommand);
-                    ObjectNode selectedResult = objectMapper.createObjectNode();
-                    selectedResult.put("command", "select");
-                    selectedResult.put("user", selectCommand.getUsername());
-                    selectedResult.put("timestamp", selectCommand.getTimestamp());
-                    selectedResult.put("message", select);
-                    outputs.add(selectedResult);
+                   selectCommand.displaySelecet(selectCommand, matchingSongs,
+                           matchingPodcasts, lastSearch, objectMapper, outputs);
+                    if (lastSearch == 1) {
+                        currentSong = selectCommand.songSel(matchingSongs, selectCommand);
+                    } else if (lastSearch == 2) {
+                        currentPodcast = selectCommand.podcastSel(matchingPodcasts, selectCommand);
+                    }
 
                     break;
                 case "repeat":

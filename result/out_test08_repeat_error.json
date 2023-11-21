@@ -12,12 +12,6 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 2245,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
-  "command" : "search",
-  "user" : "emily30",
   "timestamp" : 3170,
   "message" : "Search returned 1 results",
   "results" : [ "99 Problems" ]
@@ -27,14 +21,8 @@
   "timestamp" : 3190,
   "message" : "Successfully selected 99 Problems."
 }, {
-  "command" : "search",
-  "user" : "emily30",
-  "timestamp" : 3260,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 3290,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected 99 Problems."
 } ]

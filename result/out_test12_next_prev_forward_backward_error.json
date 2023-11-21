@@ -21,16 +21,10 @@
   "timestamp" : 290,
   "message" : "Successfully selected Swimming Pools (Drank)."
 }, {
-  "command" : "search",
-  "user" : "emily30",
-  "timestamp" : 1000,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1190,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Swimming Pools (Drank)."
 }, {
   "command" : "search",
   "user" : "emily30",

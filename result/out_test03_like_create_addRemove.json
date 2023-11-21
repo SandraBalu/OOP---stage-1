@@ -21,14 +21,8 @@
   "timestamp" : 35,
   "message" : "Successfully selected The Unforgiven."
 }, {
-  "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 63,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 64,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected The Unforgiven."
 } ]

@@ -65,47 +65,23 @@
   "timestamp" : 1290,
   "message" : "Successfully selected The Man."
 }, {
-  "command" : "search",
-  "user" : "carol19",
-  "timestamp" : 1400,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1410,
-  "message" : "The selected ID is too high."
-}, {
-  "command" : "search",
-  "user" : "david27",
-  "timestamp" : 1680,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Successfully selected The Man."
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1710,
-  "message" : "The selected ID is too high."
-}, {
-  "command" : "search",
-  "user" : "david27",
-  "timestamp" : 1800,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Successfully selected The Man."
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1810,
-  "message" : "The selected ID is too high."
-}, {
-  "command" : "search",
-  "user" : "emily30",
-  "timestamp" : 1865,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Successfully selected The Man."
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1870,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected The Man."
 } ]

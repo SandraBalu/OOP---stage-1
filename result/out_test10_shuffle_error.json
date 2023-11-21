@@ -65,14 +65,8 @@
   "timestamp" : 560,
   "message" : "Successfully selected Thinking Out Loud."
 }, {
-  "command" : "search",
-  "user" : "bob35",
-  "timestamp" : 3110,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 3130,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Thinking Out Loud."
 } ]
