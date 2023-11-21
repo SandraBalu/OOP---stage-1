@@ -83,8 +83,6 @@ public final class Main {
         // TODO add your implementation
         String filePath = CheckerConstants.TESTS_PATH + filePathInput;
         ObjectMapper objectMapper1 = new ObjectMapper();
-
-        ProcessCommands processCommands = new ProcessCommands();
         ArrayList<String> matching = new ArrayList<>();
 
         List<JsonNode> jsonNodeList = objectMapper1.readValue(new File(filePath),
@@ -103,7 +101,7 @@ public final class Main {
                 case "search":
                     SearchCommand searchCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(SearchCommand.class));
-                    matching = processCommands.executeSearch(searchCommand, library);
+                    matching = searchCommand.executeSearch(searchCommand, library);
 
                     ObjectNode matchingResults = objectMapper.createObjectNode();
                     matchingResults.put("command", "search");
@@ -125,7 +123,7 @@ public final class Main {
                 case "select":
                     SelectCommand selectCommand = objectMapper1.treeToValue(jsonNode,
                                 typeFactory.constructType(SelectCommand.class));
-                    String select = processCommands.executeSelect(matching, selectCommand);
+                    String select = selectCommand.executeSelect(matching, selectCommand);
                     ObjectNode selectedResult = objectMapper.createObjectNode();
                     selectedResult.put("command", "select");
                     selectedResult.put("user", selectCommand.getUsername());
