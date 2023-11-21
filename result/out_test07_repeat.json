@@ -10,6 +10,11 @@
   "timestamp" : 15,
   "message" : "Successfully selected Dream Chaser."
 }, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 20,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 1006,
@@ -20,6 +25,11 @@
   "user" : "alice22",
   "timestamp" : 1007,
   "message" : "Successfully selected 99 Problems."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 1008,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -32,6 +42,11 @@
   "timestamp" : 1011,
   "message" : "Successfully selected Hustle Hard."
 }, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 1012,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 1014,
@@ -42,6 +57,11 @@
   "user" : "alice22",
   "timestamp" : 1015,
   "message" : "Successfully selected Butterfly Effect."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 1016,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -54,6 +74,11 @@
   "timestamp" : 1019,
   "message" : "Successfully selected Moves Like Jagger."
 }, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 1020,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 1022,
@@ -65,8 +90,18 @@
   "timestamp" : 1023,
   "message" : "Successfully selected Dream Chaser."
 }, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 1024,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 1027,
   "message" : "Successfully selected Dream Chaser."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 1028,
+  "message" : "Playback loaded successfully."
 } ]

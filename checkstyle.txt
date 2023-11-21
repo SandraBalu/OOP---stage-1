@@ -1,6 +1,8 @@
 Starting audit...
 [ERROR] /home/sandra/Desktop/Poo-etapa1/./src/main/Main.java:11:16: Using the '.*' form of import should be avoided - commands.*. [AvoidStarImport]
 [ERROR] /home/sandra/Desktop/Poo-etapa1/./src/main/Main.java:12:20: Using the '.*' form of import should be avoided - fileio.input.*. [AvoidStarImport]
+[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/main/Main.java:128:60: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/LoadCommand.java:10:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/SearchCommand.java:42:16: 'filters' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 5 errors.

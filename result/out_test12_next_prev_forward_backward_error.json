@@ -10,6 +10,11 @@
   "timestamp" : 190,
   "message" : "Successfully selected Going Bad."
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 195,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 270,
@@ -21,10 +26,20 @@
   "timestamp" : 290,
   "message" : "Successfully selected Swimming Pools (Drank)."
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 300,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1190,
   "message" : "Successfully selected Swimming Pools (Drank)."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 1195,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -47,4 +62,9 @@
   "user" : "emily30",
   "timestamp" : 4220,
   "message" : "Successfully selected Championships."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 4350,
+  "message" : "Playback loaded successfully."
 } ]

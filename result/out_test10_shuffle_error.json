@@ -21,6 +21,11 @@
   "timestamp" : 210,
   "message" : "Successfully selected Blank Space."
 }, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 213,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 250,
@@ -31,6 +36,11 @@
   "user" : "bob35",
   "timestamp" : 260,
   "message" : "Successfully selected Whole Lotta Love."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 263,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -43,6 +53,11 @@
   "timestamp" : 410,
   "message" : "Successfully selected I Don't Wanna Live Forever."
 }, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 415,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 500,
@@ -53,6 +68,11 @@
   "user" : "bob35",
   "timestamp" : 510,
   "message" : "Successfully selected Kings Dead."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 513,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -65,8 +85,18 @@
   "timestamp" : 560,
   "message" : "Successfully selected Thinking Out Loud."
 }, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 563,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 3130,
   "message" : "Successfully selected Thinking Out Loud."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 3140,
+  "message" : "Playback loaded successfully."
 } ]

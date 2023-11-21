@@ -86,6 +86,7 @@ public final class Main {
         ArrayList<PodcastInput> matchingPodcasts = new ArrayList<>();
         SongInput currentSong = new SongInput();
         PodcastInput currentPodcast = new PodcastInput();
+        int timestampAnt = 0; String antCommandName = null;
         // 0 - no search, 1 - search song, 2 - search podcast
         int lastSearch = 0;
 
@@ -117,10 +118,16 @@ public final class Main {
                     searchCommand.displaySearch(searchCommand, library, outputs,
                             objectMapper, matchingSongs, matchingPodcasts);
 
+                    antCommandName = "search";
+
                     break;
                 case "load":
                     LoadCommand loadCommand = objectMapper1.treeToValue(jsonNode,
                                 typeFactory.constructType(LoadCommand.class));
+                    if (lastSearch == 1) {
+                        loadCommand.loadExecute(currentSong,loadCommand, antCommandName,
+                                objectMapper, outputs);
+                    }
 
                     break;
                 case "select":
@@ -133,6 +140,8 @@ public final class Main {
                     } else if (lastSearch == 2) {
                         currentPodcast = selectCommand.podcastSel(matchingPodcasts, selectCommand);
                     }
+                    timestampAnt = selectCommand.getTimestamp();
+                    antCommandName = "select";
 
                     break;
                 case "repeat":

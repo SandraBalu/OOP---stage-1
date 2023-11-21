@@ -10,6 +10,16 @@
   "timestamp" : 1100,
   "message" : "Successfully selected The Unforgiven."
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 1120,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 3000,
+  "message" : "Please select a source before attempting to load."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 3170,
@@ -20,6 +30,11 @@
   "user" : "emily30",
   "timestamp" : 3190,
   "message" : "Successfully selected 99 Problems."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 3195,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "select",
   "user" : "emily30",
