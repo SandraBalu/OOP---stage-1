@@ -18,7 +18,18 @@
   "command" : "load",
   "user" : "emily30",
   "timestamp" : 3285,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 3290,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 228,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -47,6 +58,17 @@
   "timestamp" : 3745,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 3770,
+  "stats" : {
+    "name" : "The Man",
+    "remainedTime" : 165,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 3815,
@@ -63,6 +85,17 @@
   "timestamp" : 3945,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 3970,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 208,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 4060,
@@ -73,10 +106,21 @@
   "timestamp" : 4105,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 4170,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 168,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
   "command" : "load",
   "user" : "emily30",
   "timestamp" : 4245,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -88,4 +132,15 @@
   "user" : "emily30",
   "timestamp" : 4325,
   "message" : "Please select a source before attempting to load."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 4370,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 123,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 } ]

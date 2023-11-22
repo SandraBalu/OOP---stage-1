@@ -90,6 +90,17 @@
   "timestamp" : 563,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3100,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 3130,
@@ -99,4 +110,92 @@
   "user" : "bob35",
   "timestamp" : 3140,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3150,
+  "stats" : {
+    "name" : "Thinking Out Loud",
+    "remainedTime" : 271,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3200,
+  "stats" : {
+    "name" : "Thinking Out Loud",
+    "remainedTime" : 221,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3250,
+  "stats" : {
+    "name" : "Thinking Out Loud",
+    "remainedTime" : 171,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3270,
+  "stats" : {
+    "name" : "Thinking Out Loud",
+    "remainedTime" : 151,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3320,
+  "stats" : {
+    "name" : "Thinking Out Loud",
+    "remainedTime" : 101,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3370,
+  "stats" : {
+    "name" : "Thinking Out Loud",
+    "remainedTime" : 51,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3690,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3740,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 } ]

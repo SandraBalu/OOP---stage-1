@@ -84,11 +84,12 @@ public final class Main {
         ObjectMapper objectMapper1 = new ObjectMapper();
         ArrayList<SongInput> matchingSongs = new ArrayList<>();
         ArrayList<PodcastInput> matchingPodcasts = new ArrayList<>();
+
+        Current current = new Current();
         SongInput currentSong = new SongInput();
         PodcastInput currentPodcast = new PodcastInput();
         int timestampAnt = 0; String antCommandName = null;
         // 0 - no search, 1 - search song, 2 - search podcast
-        int lastSearch = 0;
 
         List<JsonNode> jsonNodeList = objectMapper1.readValue(new File(filePath),
                 objectMapper1.getTypeFactory().constructCollectionType(List.class,
@@ -106,44 +107,29 @@ public final class Main {
                 case "search":
                     SearchCommand searchCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(SearchCommand.class));
-
-                    if (searchCommand.getType().equals("song")) {
-                        matchingSongs = searchCommand.searchSong(searchCommand, library);
-                        lastSearch = 1;
-                    }
-                    if (searchCommand.getType().equals("podcast")) {
-                        matchingPodcasts = searchCommand.searchPodcast(searchCommand, library);
-                        lastSearch = 2;
-                    }
-                    searchCommand.displaySearch(searchCommand, library, outputs,
-                            objectMapper, matchingSongs, matchingPodcasts);
-
-                    antCommandName = "search";
+                    searchCommand.executeSearch(searchCommand, current, library, objectMapper, outputs);
 
                     break;
                 case "load":
                     LoadCommand loadCommand = objectMapper1.treeToValue(jsonNode,
                                 typeFactory.constructType(LoadCommand.class));
-                    if (lastSearch == 1) {
-                        loadCommand.loadExecute(currentSong,loadCommand, antCommandName,
-                                objectMapper, outputs);
-                    }
+                    loadCommand.executeLoad(loadCommand,current, library, objectMapper, outputs);
 
                     break;
                 case "select":
                     SelectCommand selectCommand = objectMapper1.treeToValue(jsonNode,
                                 typeFactory.constructType(SelectCommand.class));
-                   selectCommand.displaySelecet(selectCommand, matchingSongs,
-                           matchingPodcasts, lastSearch, objectMapper, outputs);
-                    if (lastSearch == 1) {
-                        currentSong = selectCommand.songSel(matchingSongs, selectCommand);
-                    } else if (lastSearch == 2) {
-                        currentPodcast = selectCommand.podcastSel(matchingPodcasts, selectCommand);
-                    }
-                    timestampAnt = selectCommand.getTimestamp();
-                    antCommandName = "select";
+                    selectCommand.executeSelect(selectCommand, current, library, objectMapper, outputs);
 
                     break;
+
+                case "playPause":
+                    PlayPauseCommand playPause = objectMapper1.treeToValue(jsonNode,
+                            typeFactory.constructType(PlayPauseCommand.class));
+                    playPause.executePlayPause(playPause, current, library, objectMapper, outputs);
+
+                    break;
+
                 case "repeat":
                     RepeatCommand repeatCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(RepeatCommand.class));
@@ -178,6 +164,7 @@ public final class Main {
                 case "status":
                     StatusCommand statusCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(StatusCommand.class));
+                    statusCommand.displayStatus(statusCommand, current, objectMapper,outputs);
                     break;
                 case "switchVisibility":
                     SwitchVisibilityCommand switchVisibility = objectMapper1.treeToValue(jsonNode,

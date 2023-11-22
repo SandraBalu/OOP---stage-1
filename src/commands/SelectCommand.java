@@ -3,8 +3,10 @@ package commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import fileio.input.LibraryInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
+import main.Current;
 
 import java.util.ArrayList;
 
@@ -25,12 +27,12 @@ public final class SelectCommand extends Command {
      */
     public String generateSelect(final ArrayList<SongInput> matchingSongs,
                                 final ArrayList<PodcastInput> matchingPodcasts,
-                                final SelectCommand selectCommand, final int lastSearch) {
+                                Current current, final SelectCommand selectCommand) {
         if (matchingSongs == null && matchingPodcasts == null) {
             return "Please conduct a search before making a selection.";
         }
 
-        if (matchingSongs != null && lastSearch == 1) {
+        if (matchingSongs != null && current.getWhatIsOn() == 1) {
             int item = selectCommand.getItemNumber();
             if (item > matchingSongs.size()) {
                 return "The selected ID is too high.";
@@ -38,11 +40,13 @@ public final class SelectCommand extends Command {
 
             String selectedSuccessfully;
             SongInput song = matchingSongs.get(--item);
+            current.setCurrentSong(song);
+            current.setRemainedTime(song.getDuration());
             selectedSuccessfully = "Successfully selected " + song.getName() + ".";
             return selectedSuccessfully;
         }
 
-        if (matchingPodcasts != null && lastSearch == 2) {
+        if (matchingPodcasts != null && current.getWhatIsOn() == 2) {
             int item = selectCommand.getItemNumber();
             if (item > matchingPodcasts.size()) {
                 return "The selected ID is too high.";
@@ -58,69 +62,40 @@ public final class SelectCommand extends Command {
     }
 
     /**
-     * return selected song
-     */
-    public SongInput songSel(final ArrayList<SongInput> matchingSongs,
-                             final SelectCommand selectCommand) {
-        if (matchingSongs == null) {
-            return null;
-        }
-
-        if (matchingSongs != null) {
-            int item = selectCommand.getItemNumber();
-            if (item > matchingSongs.size()) {
-                return null;
-            }
-
-            String selectedSuccessfully;
-            SongInput song = matchingSongs.get(--item);
-            return song;
-        }
-        return null;
-    }
-
-    /**
-     * return selected podcast
-     */
-    public PodcastInput podcastSel(final ArrayList<PodcastInput> matchingPodcasts,
-                                   final SelectCommand selectCommand) {
-        if (matchingPodcasts == null) {
-            return null;
-        }
-
-
-        if (matchingPodcasts != null) {
-            int item = selectCommand.getItemNumber();
-            if (item > matchingPodcasts.size()) {
-                return null;
-            }
-
-            String selectedSuccessfully;
-            PodcastInput podcast = matchingPodcasts.get(--item);
-            return podcast;
-        }
-
-        return null;
-    }
-
-    /**
      * display selection message
      */
 
     public void displaySelecet(final SelectCommand selectCommand,
                                final ArrayList<SongInput> matchingSongs,
                                final ArrayList<PodcastInput> matchingPodcasts,
-                               final int lastSearch,
+                               Current current,
                                final ObjectMapper objectMapper, final ArrayNode outputs) {
 
-        String select = selectCommand.generateSelect(matchingSongs, matchingPodcasts,
-                selectCommand, lastSearch);
+        String select = selectCommand.generateSelect(matchingSongs, matchingPodcasts, current, selectCommand);
         ObjectNode selectedResult = objectMapper.createObjectNode();
+
         selectedResult.put("command", "select");
         selectedResult.put("user", selectCommand.getUsername());
         selectedResult.put("timestamp", selectCommand.getTimestamp());
         selectedResult.put("message", select);
+
         outputs.add(selectedResult);
+    }
+
+    /**
+     * execute select
+     */
+    public void executeSelect(SelectCommand selectCommand, Current current, LibraryInput library,
+                              ObjectMapper objectMapper, ArrayNode outputs) {
+
+        selectCommand.displaySelecet(selectCommand, current.getMatchingSongsSearch(),
+                current.getMatchingPodcastsSearch(),current , objectMapper, outputs);
+
+
+        current.setTimestampAnt(selectCommand.getTimestamp());
+        current.setAntCommand("select");
+
+
     }
 
 }

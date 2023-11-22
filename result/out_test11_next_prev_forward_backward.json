@@ -63,6 +63,17 @@
   "timestamp" : 446,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 480,
+  "stats" : {
+    "name" : "Under Pressure",
+    "remainedTime" : 210,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 510,
@@ -72,6 +83,50 @@
   "user" : "bob35",
   "timestamp" : 650,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 655,
+  "stats" : {
+    "name" : "Stairway to Heaven",
+    "remainedTime" : 477,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 690,
+  "stats" : {
+    "name" : "Stairway to Heaven",
+    "remainedTime" : 442,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 711,
+  "stats" : {
+    "name" : "Stairway to Heaven",
+    "remainedTime" : 421,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 713,
+  "stats" : {
+    "name" : "Stairway to Heaven",
+    "remainedTime" : 419,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -84,6 +139,14 @@
   "timestamp" : 890,
   "message" : "Successfully selected How I Built This."
 }, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 1049
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 1051
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 1198,
@@ -94,4 +157,12 @@
   "user" : "bob35",
   "timestamp" : 1199,
   "message" : "Successfully selected How I Built This."
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 1389
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 1391
 } ]
