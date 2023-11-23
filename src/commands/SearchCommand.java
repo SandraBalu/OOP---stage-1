@@ -3,6 +3,7 @@ package commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import fileio.input.ExtendedPodcast;
 import fileio.input.LibraryInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
@@ -277,13 +278,19 @@ public final class SearchCommand extends Command {
     }
 
 
-
     /**
      * execute search
      */
     public void executeSearch(SearchCommand searchCommand, Current current ,LibraryInput library,
                               ArrayList<Playlist> playlists,
                               ObjectMapper objectMapper, ArrayNode outputs) {
+
+        current.setRemainedTime(current.getRemainedTime() + current.getTimestampAnt() - searchCommand.getTimestamp());
+        if (current.getCurrentExtendedPodcast() != null && current.getWhatIsOn() == 2) {
+            ExtendedPodcast update = current.getCurrentExtendedPodcast();
+            update.setRemainingDuration(current.getRemainedTime());
+            current.setCurrentExtendedPodcast(update);
+        }
 
         if (searchCommand.getType().equals("song")) {
             current.setMatchingSongsSearch(searchCommand.searchSong(searchCommand, library));
@@ -298,6 +305,7 @@ public final class SearchCommand extends Command {
             current.setMatchingPlaylistsSearch(searchCommand.searchPlaylist(searchCommand, playlists));
             current.setWhatIsOn(3);
         }
+
         current.setLoaded(false);
         searchCommand.displaySearch(searchCommand, library, outputs,
                 objectMapper, current.getMatchingSongsSearch(),current.getMatchingPlaylistsSearch(),

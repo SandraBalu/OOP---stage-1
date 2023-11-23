@@ -148,31 +148,73 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 800
+  "timestamp" : 800,
+  "stats" : {
+    "remainedTime" : -60,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 900
+  "timestamp" : 900,
+  "stats" : {
+    "remainedTime" : -160,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1250
+  "timestamp" : 1250,
+  "stats" : {
+    "remainedTime" : -510,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1600
+  "timestamp" : 1600,
+  "stats" : {
+    "remainedTime" : -860,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1660
+  "timestamp" : 1660,
+  "stats" : {
+    "remainedTime" : -920,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 2000
+  "timestamp" : 2000,
+  "stats" : {
+    "remainedTime" : -1260,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 2350
+  "timestamp" : 2350,
+  "stats" : {
+    "remainedTime" : -1610,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -192,13 +234,31 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 2410
+  "timestamp" : 2410,
+  "stats" : {
+    "remainedTime" : -57,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 2750
+  "timestamp" : 2750,
+  "stats" : {
+    "remainedTime" : -397,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3100
+  "timestamp" : 3100,
+  "stats" : {
+    "remainedTime" : -747,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 } ]

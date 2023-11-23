@@ -187,29 +187,71 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 1035
+  "timestamp" : 1035,
+  "stats" : {
+    "remainedTime" : -7,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 1037
+  "timestamp" : 1037,
+  "stats" : {
+    "remainedTime" : -9,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2099
+  "timestamp" : 2099,
+  "stats" : {
+    "remainedTime" : -1071,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2101
+  "timestamp" : 2101,
+  "stats" : {
+    "remainedTime" : -1073,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2334
+  "timestamp" : 2334,
+  "stats" : {
+    "remainedTime" : -1306,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2336
+  "timestamp" : 2336,
+  "stats" : {
+    "remainedTime" : -1308,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 3600
+  "timestamp" : 3600,
+  "stats" : {
+    "remainedTime" : -2572,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 } ]

@@ -127,7 +127,7 @@ public final class Main {
                 case "load":
                     LoadCommand loadCommand = objectMapper1.treeToValue(jsonNode,
                                 typeFactory.constructType(LoadCommand.class));
-                    loadCommand.executeLoad(loadCommand,current, library, objectMapper, outputs);
+                    loadCommand.executeLoad(loadCommand,current, library, loadedPodcasts, objectMapper, outputs);
 
                     break;
                 case "select":

@@ -61,7 +61,13 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3100
+  "timestamp" : 3100,
+  "stats" : {
+    "remainedTime" : -145,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
@@ -113,11 +119,23 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3310
+  "timestamp" : 3310,
+  "stats" : {
+    "remainedTime" : -20,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3400
+  "timestamp" : 3400,
+  "stats" : {
+    "remainedTime" : -110,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
@@ -126,5 +144,11 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3450
+  "timestamp" : 3450,
+  "stats" : {
+    "remainedTime" : -160,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 } ]

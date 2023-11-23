@@ -149,33 +149,81 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3150
+  "timestamp" : 3150,
+  "stats" : {
+    "remainedTime" : -10,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3200
+  "timestamp" : 3200,
+  "stats" : {
+    "remainedTime" : -60,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3250
+  "timestamp" : 3250,
+  "stats" : {
+    "remainedTime" : -110,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3270
+  "timestamp" : 3270,
+  "stats" : {
+    "remainedTime" : -130,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3320
+  "timestamp" : 3320,
+  "stats" : {
+    "remainedTime" : -180,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3370
+  "timestamp" : 3370,
+  "stats" : {
+    "remainedTime" : -230,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3690
+  "timestamp" : 3690,
+  "stats" : {
+    "remainedTime" : -550,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3740
+  "timestamp" : 3740,
+  "stats" : {
+    "remainedTime" : -600,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 } ]

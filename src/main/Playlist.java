@@ -13,12 +13,20 @@ public class Playlist {
 
     private ArrayList<SongInput> playlistSongs;
     private  int playlistId;
-
     private  boolean empty;
 
     private boolean visibility;
 
     private int followers;
+    private int contorSongs;
+
+    public int getContorSongs() {
+        return contorSongs;
+    }
+
+    public void setContorSongs(int contorSongs) {
+        this.contorSongs = contorSongs;
+    }
 
     public int getFollowers() {
         return followers;

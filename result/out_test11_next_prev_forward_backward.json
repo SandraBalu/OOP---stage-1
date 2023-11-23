@@ -117,19 +117,43 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 655
+  "timestamp" : 655,
+  "stats" : {
+    "remainedTime" : -5,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 690
+  "timestamp" : 690,
+  "stats" : {
+    "remainedTime" : -40,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 711
+  "timestamp" : 711,
+  "stats" : {
+    "remainedTime" : -61,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 713
+  "timestamp" : 713,
+  "stats" : {
+    "remainedTime" : -63,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -149,11 +173,25 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1049
+  "timestamp" : 1049,
+  "stats" : {
+    "name" : "Airbnb: Joe Gebbia",
+    "remainedTime" : 2817,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1051
+  "timestamp" : 1051,
+  "stats" : {
+    "name" : "Airbnb: Joe Gebbia",
+    "remainedTime" : 2815,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -173,9 +211,23 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1389
+  "timestamp" : 1389,
+  "stats" : {
+    "name" : "Airbnb: Joe Gebbia",
+    "remainedTime" : 2479,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1391
+  "timestamp" : 1391,
+  "stats" : {
+    "name" : "Airbnb: Joe Gebbia",
+    "remainedTime" : 2477,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 } ]

@@ -39,6 +39,7 @@ public final class SelectCommand extends Command {
             return "Please conduct a search before making a selection.";
         }
 
+        //select a song
         if (current.getMatchingSongsSearch() != null && current.getWhatIsOn() == 1) {
             int item = selectCommand.getItemNumber();
             if (item > current.getMatchingSongsSearch().size()) {
@@ -54,6 +55,7 @@ public final class SelectCommand extends Command {
             return selectedSuccessfully;
         }
 
+        //select a playlist
         if (current.getMatchingPlaylistsSearch() != null && current.getWhatIsOn() == 3 ) {
             int item = selectCommand.getItemNumber();
             if (item > current.getMatchingPlaylistsSearch().size()) {
@@ -67,6 +69,7 @@ public final class SelectCommand extends Command {
             return selectedSuccessfully;
         }
 
+        // select a podcast
         if (current.getMatchingPodcastsSearch() != null && current.getWhatIsOn() == 2) {
             int item = selectCommand.getItemNumber();
             if (item > current.getMatchingPodcastsSearch().size()) {
@@ -75,9 +78,7 @@ public final class SelectCommand extends Command {
 
             String selectedSuccessfully;
             PodcastInput podcast = current.getMatchingPodcastsSearch().get(--item);
-            ExtendedPodcast currentExtended = new ExtendedPodcast();
-            currentExtended.setPodcast(podcast);
-            current.setCurrentExtendedPodcast(currentExtended);
+            current.setCurrentPodcast(podcast);
             selectedSuccessfully = "Successfully selected " + podcast.getName() + ".";
             return selectedSuccessfully;
         }
@@ -89,7 +90,7 @@ public final class SelectCommand extends Command {
      * display selection message
      */
 
-    public void displaySelecet(final SelectCommand selectCommand,
+    public void displaySelect(final SelectCommand selectCommand,
                                final ArrayList<SongInput> matchingSongs,
                                final ArrayList<PodcastInput> matchingPodcasts,
                                Current current,
@@ -112,9 +113,8 @@ public final class SelectCommand extends Command {
     public void executeSelect(SelectCommand selectCommand, Current current, LibraryInput library,
                               ObjectMapper objectMapper, ArrayNode outputs) {
 
-        selectCommand.displaySelecet(selectCommand, current.getMatchingSongsSearch(),
+        selectCommand.displaySelect(selectCommand, current.getMatchingSongsSearch(),
                 current.getMatchingPodcastsSearch(),current , objectMapper, outputs);
-
 
         current.setTimestampAnt(selectCommand.getTimestamp());
         current.setAntCommand("select");

@@ -54,7 +54,13 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 1140
+  "timestamp" : 1140,
+  "stats" : {
+    "remainedTime" : -593,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -68,15 +74,33 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 1220
+  "timestamp" : 1220,
+  "stats" : {
+    "remainedTime" : -25,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 1250
+  "timestamp" : 1250,
+  "stats" : {
+    "remainedTime" : -55,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 1320
+  "timestamp" : 1320,
+  "stats" : {
+    "remainedTime" : -125,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -96,11 +120,25 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3220
+  "timestamp" : 3220,
+  "stats" : {
+    "name" : "The Capitol Riot, 1 Year Later",
+    "remainedTime" : 350,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3920
+  "timestamp" : 3920,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "search",
   "user" : "emily30",

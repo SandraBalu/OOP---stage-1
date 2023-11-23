@@ -140,7 +140,13 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 4170
+  "timestamp" : 4170,
+  "stats" : {
+    "remainedTime" : -65,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "load",
   "user" : "emily30",
