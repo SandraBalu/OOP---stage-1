@@ -180,6 +180,11 @@
   "timestamp" : 1027,
   "message" : "Successfully selected My favourite songs."
 }, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 1028,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 1035

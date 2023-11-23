@@ -10,6 +10,11 @@
   "timestamp" : 15,
   "message" : "Successfully selected TED Radio Hour."
 }, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 20,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 59
@@ -40,6 +45,11 @@
   "user" : "alice22",
   "timestamp" : 80,
   "message" : "Successfully selected TED Radio Hour."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 85,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -111,6 +121,11 @@
   "user" : "alice22",
   "timestamp" : 3260,
   "message" : "Successfully selected 2010 hits."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 3265,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "alice22",

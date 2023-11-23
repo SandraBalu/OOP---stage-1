@@ -24,7 +24,7 @@ public final class CreatePlaylistCommand extends Command {
                                       Current current, ObjectMapper objectMapper,
                                       ArrayNode outputs) {
 
-        boolean exists = false;
+
         if (playlists.size() == 0) {
             //first playlis
             Playlist newPlaylist = new Playlist();
@@ -40,14 +40,16 @@ public final class CreatePlaylistCommand extends Command {
                 if (playlist.getPlaylistName().equals(createPlaylistCommand.playlistName)) {
                     ObjectNode createPlaylistResult = objectMapper.createObjectNode();
                     createPlaylistResult.put("command", "createPlaylist");
-                    createPlaylistResult.put("error", "Already exists playlist named like this");
+                    createPlaylistResult.put("user", createPlaylistCommand.getUsername());
+                    createPlaylistResult.put("timestamp", createPlaylistCommand.getTimestamp());
+                    createPlaylistResult.put("message", "A playlist with the same name already exists.");
+
                     outputs.add(createPlaylistResult);
-                    exists = true;
                     return;
                 }
             }
 
-            if (!exists) {
+
                 Playlist newPlaylist = new Playlist();
                 newPlaylist.setPlaylistName(createPlaylistCommand.getPlaylistName());
                 newPlaylist.setUsername(createPlaylistCommand.getUsername());
@@ -56,7 +58,7 @@ public final class CreatePlaylistCommand extends Command {
                 newPlaylist.setEmpty(true);
                 newPlaylist.setFollowers(0);
                 playlists.add(newPlaylist);
-            }
+
         }
 
         ObjectNode createPlaylistResult = objectMapper.createObjectNode();

@@ -288,6 +288,7 @@ public final class SearchCommand extends Command {
         if (searchCommand.getType().equals("song")) {
             current.setMatchingSongsSearch(searchCommand.searchSong(searchCommand, library));
             current.setWhatIsOn(1);
+
         }
         if (searchCommand.getType().equals("podcast")) {
             current.setMatchingPodcastsSearch(searchCommand.searchPodcast(searchCommand, library));
@@ -297,12 +298,15 @@ public final class SearchCommand extends Command {
             current.setMatchingPlaylistsSearch(searchCommand.searchPlaylist(searchCommand, playlists));
             current.setWhatIsOn(3);
         }
+        current.setLoaded(false);
         searchCommand.displaySearch(searchCommand, library, outputs,
                 objectMapper, current.getMatchingSongsSearch(),current.getMatchingPlaylistsSearch(),
                         current.getMatchingPodcastsSearch());
 
         current.setAntCommand("search");
         current.setTimestampAnt(searchCommand.getTimestamp());
+        current.setLoaded(false);
+        current.setPlays(false);
 
     }
 

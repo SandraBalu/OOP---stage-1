@@ -31,6 +31,11 @@
   "timestamp" : 30,
   "message" : "Successfully selected The Joe Rogan Experience."
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 31,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "createPlaylist",
   "user" : "emily30",
   "timestamp" : 35,
@@ -50,10 +55,12 @@
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
   "timestamp" : 50,
-  "message" : "Successfully added to playlist."
+  "message" : "Please load a source before adding to or removing from the playlist."
 }, {
   "command" : "createPlaylist",
-  "error" : "Already exists playlist named like this"
+  "user" : "emily30",
+  "timestamp" : 55,
+  "message" : "A playlist with the same name already exists."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -85,24 +92,29 @@
   "command" : "like",
   "user" : "emily30",
   "timestamp" : 80,
-  "message" : "Like registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 85,
   "message" : "Successfully selected Playlist alb pentru zile negre."
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 86,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "like",
   "user" : "emily30",
   "timestamp" : 90,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "showPlaylists",
   "user" : "emily30",
   "timestamp" : 95,
   "result" : [ {
     "name" : "Playlist alb pentru zile negre",
-    "songs" : [ "Big Pimpin'", "Get Lucky" ],
+    "songs" : [ "Get Lucky" ],
     "visibility" : "public",
     "followers" : 0
   } ]

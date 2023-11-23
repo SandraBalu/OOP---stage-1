@@ -110,6 +110,11 @@
   "timestamp" : 510,
   "message" : "Successfully selected My favourite songs."
 }, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 650,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 655
@@ -137,6 +142,11 @@
   "timestamp" : 890,
   "message" : "Successfully selected How I Built This."
 }, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 900,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 1049
@@ -155,6 +165,11 @@
   "user" : "bob35",
   "timestamp" : 1199,
   "message" : "Successfully selected How I Built This."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 1200,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "bob35",

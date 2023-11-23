@@ -141,6 +141,11 @@
   "timestamp" : 710,
   "message" : "Successfully selected My playlist."
 }, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 740,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 800
@@ -179,6 +184,11 @@
   "user" : "bob35",
   "timestamp" : 2352,
   "message" : "Successfully selected My playlist."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 2353,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "bob35",

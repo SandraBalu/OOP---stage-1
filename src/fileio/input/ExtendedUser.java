@@ -1,11 +1,15 @@
 package fileio.input;
 
+import main.Playlist;
+
 import java.util.ArrayList;
 
 public class ExtendedUser {
 
     private String userName;
     private ArrayList<SongInput>  likedSongs;
+
+    private ArrayList<Playlist> likedPlaylists;
 
     public String getUserName() {
         return userName;
@@ -21,6 +25,14 @@ public class ExtendedUser {
 
     public void setLikedSongs(ArrayList<SongInput> likedSongs) {
         this.likedSongs = likedSongs;
+    }
+
+    public ArrayList<Playlist> getLikedPlaylists() {
+        return likedPlaylists;
+    }
+
+    public void setLikedPlaylists(ArrayList<Playlist> likedPlaylists) {
+        this.likedPlaylists = likedPlaylists;
     }
 
     public  final  void loadUsers(ArrayList<ExtendedUser> extendedUsers, LibraryInput libraryInput) {

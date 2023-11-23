@@ -1,5 +1,6 @@
 package main;
 
+import fileio.input.ExtendedPodcast;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
 
@@ -20,6 +21,16 @@ public final class Current {
     private int timestampAnt;
     private String antCommand;
     private int remainedTime;
+
+    private ExtendedPodcast currentExtendedPodcast;
+
+    public ExtendedPodcast getCurrentExtendedPodcast() {
+        return currentExtendedPodcast;
+    }
+
+    public void setCurrentExtendedPodcast(ExtendedPodcast currentExtendedPodcast) {
+        this.currentExtendedPodcast = currentExtendedPodcast;
+    }
 
     public Playlist getCurrentPlaylist() {
         return currentPlaylist;

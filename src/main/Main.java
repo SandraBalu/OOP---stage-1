@@ -90,6 +90,7 @@ public final class Main {
         SongInput currentSong = new SongInput();
         PodcastInput currentPodcast = new PodcastInput();
         ArrayList<Playlist> playlists = new ArrayList<>();
+        ArrayList<ExtendedPodcast> loadedPodcasts= new ArrayList<>();
         ArrayList<ExtendedUser> users = new ArrayList<>();
         ExtendedUser extendedUser = new ExtendedUser();
         extendedUser.loadUsers(users, library);

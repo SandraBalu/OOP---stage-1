@@ -3,6 +3,7 @@ package commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import fileio.input.ExtendedPodcast;
 import fileio.input.LibraryInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
@@ -74,6 +75,9 @@ public final class SelectCommand extends Command {
 
             String selectedSuccessfully;
             PodcastInput podcast = current.getMatchingPodcastsSearch().get(--item);
+            ExtendedPodcast currentExtended = new ExtendedPodcast();
+            currentExtended.setPodcast(podcast);
+            current.setCurrentExtendedPodcast(currentExtended);
             selectedSuccessfully = "Successfully selected " + podcast.getName() + ".";
             return selectedSuccessfully;
         }

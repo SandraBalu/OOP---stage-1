@@ -61,6 +61,11 @@
   "timestamp" : 1190,
   "message" : "Successfully selected My favourite songs."
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 1195,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 1220
@@ -83,6 +88,11 @@
   "user" : "emily30",
   "timestamp" : 2190,
   "message" : "Successfully selected The Daily."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 2200,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "emily30",

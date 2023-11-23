@@ -5,6 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import fileio.input.EpisodeInput;
+import fileio.input.ExtendedPodcast;
+import fileio.input.PodcastInput;
 import fileio.input.SongInput;
 import main.Current;
 
@@ -15,9 +18,9 @@ public final class StatusCommand extends Command {
                               ObjectMapper objectMapper, ArrayNode outputs) {
 
         ObjectNode statusResults = objectMapper.createObjectNode();
-        statusResults .put("command", "status");
-        statusResults .put("user", statusCommand.getUsername());
-        statusResults .put("timestamp", statusCommand.getTimestamp());
+        statusResults.put("command", "status");
+        statusResults.put("user", statusCommand.getUsername());
+        statusResults.put("timestamp", statusCommand.getTimestamp());
 
         if (current.getWhatIsOn() == 1) {
 
@@ -48,11 +51,36 @@ public final class StatusCommand extends Command {
 
             statusResults.set("stats", statusFields);
 
+        } else if (current.getWhatIsOn() == 3) {
+
+
+//            ObjectNode statusFields = JsonNodeFactory.instance.objectNode();
+//
+//            if (current.getRemainedTime() > 0) {
+//                statusFields.put("name", currentEpisode.getName());
+//                statusFields.put("remainedTime", current.getRemainedTime());
+//                statusFields.put("repeat", "No Repeat");
+//                statusFields.put("shuffle", current.isShuffle());
+//                statusFields.put("paused", current.isPlays());
+//            } else {
+//                current.setRemainedTime(0);
+//                current.setPlays(true);
+//                current.setCurrentSong(null);
+//                statusFields.put("name", "");
+//                statusFields.put("remainedTime", current.getRemainedTime());
+//                statusFields.put("repeat", "No Repeat");
+//                statusFields.put("shuffle", current.isShuffle());
+//                statusFields.put("paused", current.isPlays());
+//            }
+//
+//            statusResults.set("stats", statusFields);
+//
         }
         outputs.add(statusResults);
         current.setAntCommand("status");
         current.setTimestampAnt(statusCommand.getTimestamp());
 
+        }
+
     }
 
-}

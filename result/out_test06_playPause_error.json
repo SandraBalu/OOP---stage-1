@@ -47,11 +47,21 @@
   "message" : "Search returned 2 results",
   "results" : [ "TED Talks Daily", "TED-Ed: Lessons Worth Sharing" ]
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 3345,
+  "message" : "Please select a source before attempting to load."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 3375,
   "message" : "Search returned 1 results",
   "results" : [ "LoFi music" ]
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 3385,
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -123,9 +133,19 @@
   "timestamp" : 4060,
   "message" : "Successfully selected LoFi music."
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 4105,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 4170
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 4245,
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "search",
   "user" : "emily30",

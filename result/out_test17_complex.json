@@ -4460,6 +4460,11 @@
   "timestamp" : 5401,
   "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 5402,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 5410,
@@ -4470,6 +4475,11 @@
   "user" : "bob35",
   "timestamp" : 5411,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 5412,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -4482,6 +4492,11 @@
   "timestamp" : 5421,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
+  "command" : "load",
+  "user" : "carol19",
+  "timestamp" : 5422,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 5430,
@@ -4492,6 +4507,11 @@
   "user" : "david27",
   "timestamp" : 5431,
   "message" : "Successfully selected Stellar Tunes Quest #2."
+}, {
+  "command" : "load",
+  "user" : "david27",
+  "timestamp" : 5432,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -4504,6 +4524,11 @@
   "timestamp" : 5441,
   "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 5442,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 5450,
@@ -4514,6 +4539,11 @@
   "user" : "frank21",
   "timestamp" : 5451,
   "message" : "Successfully selected Chill Melodies Voyage #1."
+}, {
+  "command" : "load",
+  "user" : "frank21",
+  "timestamp" : 5452,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -4526,6 +4556,11 @@
   "timestamp" : 5461,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
+  "command" : "load",
+  "user" : "grace25",
+  "timestamp" : 5462,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 5470,
@@ -4536,6 +4571,11 @@
   "user" : "henry26",
   "timestamp" : 5471,
   "message" : "Successfully selected Breezy Tunes Odyssey #2."
+}, {
+  "command" : "load",
+  "user" : "henry26",
+  "timestamp" : 5472,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -4548,6 +4588,11 @@
   "timestamp" : 5481,
   "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
+  "command" : "load",
+  "user" : "irene33",
+  "timestamp" : 5482,
+  "message" : "Playback loaded successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 5490,
@@ -4558,6 +4603,11 @@
   "user" : "jack29",
   "timestamp" : 5491,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
+}, {
+  "command" : "load",
+  "user" : "jack29",
+  "timestamp" : 5492,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -4596,6 +4646,11 @@
   "user" : "frank21",
   "timestamp" : 5550
 }, {
+  "command" : "like",
+  "user" : "grace25",
+  "timestamp" : 5560,
+  "message" : "Please load a source before liking or unliking."
+}, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 5560
@@ -4627,6 +4682,11 @@
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 5610
+}, {
+  "command" : "like",
+  "user" : "carol19",
+  "timestamp" : 5620,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -4686,6 +4746,11 @@
   "user" : "carol19",
   "timestamp" : 5720
 }, {
+  "command" : "like",
+  "user" : "david27",
+  "timestamp" : 5730,
+  "message" : "Please load a source before liking or unliking."
+}, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 5730
@@ -4730,7 +4795,7 @@
   "command" : "like",
   "user" : "bob35",
   "timestamp" : 5810,
-  "message" : "Like registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -4755,7 +4820,7 @@
   "command" : "like",
   "user" : "frank21",
   "timestamp" : 5850,
-  "message" : "Like registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -4772,7 +4837,7 @@
   "command" : "like",
   "user" : "irene33",
   "timestamp" : 5880,
-  "message" : "Like registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -4817,7 +4882,7 @@
   "command" : "like",
   "user" : "grace25",
   "timestamp" : 5960,
-  "message" : "Like registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -4846,7 +4911,7 @@
   "command" : "like",
   "user" : "carol19",
   "timestamp" : 6020,
-  "message" : "Like registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -4859,7 +4924,7 @@
   "command" : "like",
   "user" : "emily30",
   "timestamp" : 6040,
-  "message" : "Like registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -4928,9 +4993,19 @@
   "user" : "emily30",
   "timestamp" : 6140
 }, {
+  "command" : "like",
+  "user" : "frank21",
+  "timestamp" : 6150,
+  "message" : "Please load a source before liking or unliking."
+}, {
   "command" : "status",
   "user" : "frank21",
   "timestamp" : 6150
+}, {
+  "command" : "like",
+  "user" : "grace25",
+  "timestamp" : 6160,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -4960,7 +5035,7 @@
   "command" : "like",
   "user" : "bob35",
   "timestamp" : 6210,
-  "message" : "Unlike registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -4973,7 +5048,7 @@
   "command" : "like",
   "user" : "david27",
   "timestamp" : 6230,
-  "message" : "Like registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -4986,7 +5061,7 @@
   "command" : "like",
   "user" : "frank21",
   "timestamp" : 6250,
-  "message" : "Unlike registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -5053,6 +5128,11 @@
   "user" : "henry26",
   "timestamp" : 6370
 }, {
+  "command" : "like",
+  "user" : "irene33",
+  "timestamp" : 6380,
+  "message" : "Please load a source before liking or unliking."
+}, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6380
@@ -5091,6 +5171,11 @@
   "user" : "emily30",
   "timestamp" : 6440
 }, {
+  "command" : "like",
+  "user" : "frank21",
+  "timestamp" : 6450,
+  "message" : "Please load a source before liking or unliking."
+}, {
   "command" : "status",
   "user" : "frank21",
   "timestamp" : 6450
@@ -5114,6 +5199,11 @@
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 6500
+}, {
+  "command" : "like",
+  "user" : "bob35",
+  "timestamp" : 6510,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -5155,9 +5245,19 @@
   "user" : "jack29",
   "timestamp" : 6590
 }, {
+  "command" : "like",
+  "user" : "alice22",
+  "timestamp" : 6600,
+  "message" : "Please load a source before liking or unliking."
+}, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 6600
+}, {
+  "command" : "like",
+  "user" : "bob35",
+  "timestamp" : 6610,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -5229,7 +5329,7 @@
   "command" : "like",
   "user" : "david27",
   "timestamp" : 6730,
-  "message" : "Unlike registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -5298,7 +5398,7 @@
   "command" : "like",
   "user" : "henry26",
   "timestamp" : 6870,
-  "message" : "Like registered successfully."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -5337,6 +5437,11 @@
   "user" : "david27",
   "timestamp" : 6930
 }, {
+  "command" : "like",
+  "user" : "emily30",
+  "timestamp" : 6940,
+  "message" : "Please load a source before liking or unliking."
+}, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6940
@@ -5352,6 +5457,11 @@
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 6960
+}, {
+  "command" : "like",
+  "user" : "henry26",
+  "timestamp" : 6970,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -7051,8 +7161,7 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "bob35",
-  "timestamp" : 8500,
-  "result" : [ ]
+  "timestamp" : 8500
 }, {
   "command" : "showPlaylists",
   "user" : "carol19",
@@ -7071,8 +7180,7 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "carol19",
-  "timestamp" : 8510,
-  "result" : [ "Maps" ]
+  "timestamp" : 8510
 }, {
   "command" : "showPlaylists",
   "user" : "david27",
@@ -7091,8 +7199,7 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "david27",
-  "timestamp" : 8520,
-  "result" : [ ]
+  "timestamp" : 8520
 }, {
   "command" : "showPlaylists",
   "user" : "emily30",
@@ -7111,8 +7218,7 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "emily30",
-  "timestamp" : 8530,
-  "result" : [ "Maps" ]
+  "timestamp" : 8530
 }, {
   "command" : "showPlaylists",
   "user" : "frank21",
@@ -7131,8 +7237,7 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "frank21",
-  "timestamp" : 8540,
-  "result" : [ ]
+  "timestamp" : 8540
 }, {
   "command" : "showPlaylists",
   "user" : "grace25",
@@ -7151,8 +7256,7 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "grace25",
-  "timestamp" : 8550,
-  "result" : [ "Maps" ]
+  "timestamp" : 8550
 }, {
   "command" : "showPlaylists",
   "user" : "henry26",
@@ -7171,8 +7275,7 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "henry26",
-  "timestamp" : 8560,
-  "result" : [ "Maps" ]
+  "timestamp" : 8560
 }, {
   "command" : "showPlaylists",
   "user" : "irene33",
@@ -7191,8 +7294,7 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "irene33",
-  "timestamp" : 8570,
-  "result" : [ "Maps" ]
+  "timestamp" : 8570
 }, {
   "command" : "showPlaylists",
   "user" : "jack29",

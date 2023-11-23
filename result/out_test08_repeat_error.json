@@ -54,6 +54,11 @@
   "message" : "Search returned 0 results",
   "results" : [ ]
 }, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 3000,
+  "message" : "Please select a source before attempting to load."
+}, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 3100
@@ -115,7 +120,9 @@
   "timestamp" : 3400
 }, {
   "command" : "createPlaylist",
-  "error" : "Already exists playlist named like this"
+  "user" : "emily30",
+  "timestamp" : 3405,
+  "message" : "A playlist with the same name already exists."
 }, {
   "command" : "status",
   "user" : "emily30",

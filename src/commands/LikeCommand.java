@@ -15,8 +15,9 @@ public final class LikeCommand extends Command {
                                   ArrayList<ExtendedUser> extendedUsers, ObjectMapper objectMapper,
                                   ArrayNode outputs) {
 
-        if (!current.isPlays()) {
+        if (current.getAntCommand().equals("load")) {
             for (ExtendedUser user : extendedUsers) {
+
 
                 if (user.getUserName().equals(likeCommand.getUsername())) {
                     if (user.getLikedSongs() != null) {
@@ -63,6 +64,15 @@ public final class LikeCommand extends Command {
 
             }
 
+        } else {
+            ObjectNode likeResult = objectMapper.createObjectNode();
+            likeResult.put("command", "like");
+            likeResult.put("user", likeCommand.getUsername());
+            likeResult.put("timestamp", likeCommand.getTimestamp());
+            likeResult.put("message", "Please load a source before liking or unliking.");
+
+            outputs.add(likeResult);
+            return;
         }
 
     }
