@@ -1,6 +1,6 @@
 package fileio.input;
 
-public final class UserInput {
+public class UserInput {
     private String username;
     private int age;
     private String city;

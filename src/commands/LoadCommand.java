@@ -46,6 +46,7 @@ public final class LoadCommand extends Command {
                     objectMapper, outputs, current);
         }
 
+            current.setLoaded(true);
             current.setAntCommand("load");
             current.setTimestampAnt(loadCommand.getTimestamp());
             current.setPlays(false);

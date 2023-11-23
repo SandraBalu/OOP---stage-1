@@ -15,6 +15,11 @@
   "timestamp" : 15,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "emily30",
+  "timestamp" : 20,
+  "message" : "The specified playlist does not exist."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 25,
@@ -26,11 +31,29 @@
   "timestamp" : 30,
   "message" : "Successfully selected The Joe Rogan Experience."
 }, {
+  "command" : "createPlaylist",
+  "user" : "emily30",
+  "timestamp" : 35,
+  "message" : "Playlist created successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "emily30",
+  "timestamp" : 40,
+  "message" : "The loaded source is not a song."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 45,
   "message" : "Search returned 3 results",
   "results" : [ "Bohemian Rhapsody", "We Will Rock You", "Radio Ga Ga" ]
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "emily30",
+  "timestamp" : 50,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "createPlaylist",
+  "error" : "Already exists playlist named like this"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -48,13 +71,39 @@
   "timestamp" : 71,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "emily30",
+  "timestamp" : 72,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 75,
+  "message" : "Search returned 1 results",
+  "results" : [ "Playlist alb pentru zile negre" ]
+}, {
+  "command" : "like",
+  "user" : "emily30",
+  "timestamp" : 80,
+  "message" : "Like registered successfully."
+}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 85,
-  "message" : "Successfully selected The Man."
+  "message" : "Successfully selected Playlist alb pentru zile negre."
 }, {
-  "command" : "load",
+  "command" : "like",
   "user" : "emily30",
-  "timestamp" : 86,
-  "message" : "Playback loaded successfully."
+  "timestamp" : 90,
+  "message" : "Unlike registered successfully."
+}, {
+  "command" : "showPlaylists",
+  "user" : "emily30",
+  "timestamp" : 95,
+  "result" : [ {
+    "name" : "Playlist alb pentru zile negre",
+    "songs" : [ "Big Pimpin'", "Get Lucky" ],
+    "visibility" : "public",
+    "followers" : 0
+  } ]
 } ]

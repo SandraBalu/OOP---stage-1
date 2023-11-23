@@ -7,6 +7,7 @@ import fileio.input.LibraryInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
 import main.Current;
+import main.Playlist;
 
 import java.util.ArrayList;
 
@@ -186,12 +187,45 @@ public final class SearchCommand extends Command {
 
     }
 
+    public  final ArrayList<Playlist> searchPlaylist(final SearchCommand searchCommand,
+                                                     final  ArrayList<Playlist> playlists) {
+
+        ArrayList<Playlist> matching = new ArrayList<>();
+        Filter filter = searchCommand.getFilters();
+        int index;
+
+        if (filters.getOwner() != null) {
+            index = 0;
+            for (Playlist playlist : playlists) {
+                if (playlist.getUsername().equalsIgnoreCase(filters.getOwner())
+                        && index < MAGIC_NUMBER) {
+                    matching.add(playlist);
+                    index++;
+                }
+            }
+        }
+
+        if (filters.getName() != null) {
+            index = 0;
+            for (Playlist playlist : playlists) {
+                if (playlist.getPlaylistName().startsWith(filters.getName()) && index < MAGIC_NUMBER) {
+                    matching.add(playlist);
+                    ;
+                    index++;
+                }
+            }
+            return matching;
+        }
+        return matching;
+    }
+
     /**
      * display json with search message
      */
     public void displaySearch(final SearchCommand searchCommand, final LibraryInput library,
                               final ArrayNode outputs, final ObjectMapper objectMapper,
                               final ArrayList<SongInput> matchingSongs,
+                              final ArrayList<Playlist> matchingPlaylists,
                               final ArrayList<PodcastInput> matchingPodcasts) {
 
         if (searchCommand.getType().equals("song")) {
@@ -205,6 +239,21 @@ public final class SearchCommand extends Command {
             ArrayNode matchingArrayNode = matchingResults.putArray("results");
             for (SongInput song : matchingSongs) {
                 matchingArrayNode.add(song.getName());
+            }
+            outputs.add(matchingResults);
+
+        }
+        if (searchCommand.getType().equals("playlist")) {
+            ObjectNode matchingResults = objectMapper.createObjectNode();
+            matchingResults.put("command", "search");
+            matchingResults.put("user", searchCommand.getUsername());
+            matchingResults.put("timestamp", searchCommand.getTimestamp());
+            matchingResults.put("message", "Search returned "
+                    + matchingPlaylists.size() + " results");
+
+            ArrayNode matchingArrayNode = matchingResults.putArray("results");
+            for (Playlist playlist : matchingPlaylists) {
+                matchingArrayNode.add(playlist.getPlaylistName());
             }
             outputs.add(matchingResults);
 
@@ -227,10 +276,13 @@ public final class SearchCommand extends Command {
         }
     }
 
+
+
     /**
      * execute search
      */
     public void executeSearch(SearchCommand searchCommand, Current current ,LibraryInput library,
+                              ArrayList<Playlist> playlists,
                               ObjectMapper objectMapper, ArrayNode outputs) {
 
         if (searchCommand.getType().equals("song")) {
@@ -241,8 +293,13 @@ public final class SearchCommand extends Command {
             current.setMatchingPodcastsSearch(searchCommand.searchPodcast(searchCommand, library));
             current.setWhatIsOn(2);
         }
+        if (searchCommand.getType().equals("playlist")) {
+            current.setMatchingPlaylistsSearch(searchCommand.searchPlaylist(searchCommand, playlists));
+            current.setWhatIsOn(3);
+        }
         searchCommand.displaySearch(searchCommand, library, outputs,
-                objectMapper, current.getMatchingSongsSearch(), current.getMatchingPodcastsSearch());
+                objectMapper, current.getMatchingSongsSearch(),current.getMatchingPlaylistsSearch(),
+                        current.getMatchingPodcastsSearch());
 
         current.setAntCommand("search");
         current.setTimestampAnt(searchCommand.getTimestamp());

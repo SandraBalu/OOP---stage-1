@@ -48,21 +48,20 @@
     "paused" : true
   }
 }, {
-  "command" : "load",
+  "command" : "search",
   "user" : "emily30",
-  "timestamp" : 3000,
-  "message" : "Please select a source before attempting to load."
+  "timestamp" : 2245,
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3100,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 3100
+}, {
+  "command" : "createPlaylist",
+  "user" : "emily30",
+  "timestamp" : 3150,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -91,41 +90,34 @@
     "paused" : false
   }
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "emily30",
+  "timestamp" : 3240,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 3260,
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
+}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 3290,
-  "message" : "Successfully selected 99 Problems."
+  "message" : "Successfully selected My favourite songs."
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3310,
-  "stats" : {
-    "name" : "99 Problems",
-    "remainedTime" : 214,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 3310
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3400,
-  "stats" : {
-    "name" : "99 Problems",
-    "remainedTime" : 124,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 3400
+}, {
+  "command" : "createPlaylist",
+  "error" : "Already exists playlist named like this"
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3450,
-  "stats" : {
-    "name" : "99 Problems",
-    "remainedTime" : 74,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 3450
 } ]

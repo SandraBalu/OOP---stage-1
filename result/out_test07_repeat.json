@@ -59,6 +59,11 @@
     "paused" : true
   }
 }, {
+  "command" : "createPlaylist",
+  "user" : "alice22",
+  "timestamp" : 1005,
+  "message" : "Playlist created successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 1006,
@@ -74,6 +79,11 @@
   "user" : "alice22",
   "timestamp" : 1008,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 1009,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -91,6 +101,11 @@
   "timestamp" : 1012,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 1013,
+  "message" : "Successfully added to playlist."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 1014,
@@ -106,6 +121,11 @@
   "user" : "alice22",
   "timestamp" : 1016,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 1017,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -123,6 +143,11 @@
   "timestamp" : 1020,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 1021,
+  "message" : "Successfully added to playlist."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 1022,
@@ -139,90 +164,47 @@
   "timestamp" : 1024,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 1025,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 1026,
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
+}, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 1027,
-  "message" : "Successfully selected Dream Chaser."
-}, {
-  "command" : "load",
-  "user" : "alice22",
-  "timestamp" : 1028,
-  "message" : "Playback loaded successfully."
+  "message" : "Successfully selected My favourite songs."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 1035,
-  "stats" : {
-    "name" : "Dream Chaser",
-    "remainedTime" : 198,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 1035
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 1037,
-  "stats" : {
-    "name" : "Dream Chaser",
-    "remainedTime" : 196,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 1037
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2099,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 2099
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2101,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 2101
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2334,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 2334
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2336,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 2336
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 3600,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 3600
 } ]

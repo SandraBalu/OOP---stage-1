@@ -1,4 +1,9 @@
 [ {
+  "command" : "createPlaylist",
+  "user" : "bob35",
+  "timestamp" : 150,
+  "message" : "Playlist created successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 170,
@@ -14,6 +19,11 @@
   "user" : "bob35",
   "timestamp" : 195,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 240,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -31,6 +41,11 @@
   "timestamp" : 320,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 340,
+  "message" : "Successfully added to playlist."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 370,
@@ -46,6 +61,11 @@
   "user" : "bob35",
   "timestamp" : 400,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 430,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -63,6 +83,11 @@
   "timestamp" : 460,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 480,
+  "message" : "Successfully added to playlist."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 500,
@@ -78,6 +103,11 @@
   "user" : "bob35",
   "timestamp" : 520,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 540,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -95,133 +125,70 @@
   "timestamp" : 660,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 690,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 700,
+  "message" : "Search returned 1 results",
+  "results" : [ "My playlist" ]
+}, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 710,
-  "message" : "Successfully selected Begin Again."
-}, {
-  "command" : "load",
-  "user" : "bob35",
-  "timestamp" : 740,
-  "message" : "Playback loaded successfully."
+  "message" : "Successfully selected My playlist."
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 800,
-  "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 178,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 800
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 900,
-  "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 78,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 900
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1250,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 1250
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1600,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 1600
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 1660,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 1660
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 2000,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 2000
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 2350,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 2350
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 2351,
+  "message" : "Search returned 1 results",
+  "results" : [ "My playlist" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 2352,
-  "message" : "Successfully selected Begin Again."
-}, {
-  "command" : "load",
-  "user" : "bob35",
-  "timestamp" : 2353,
-  "message" : "Playback loaded successfully."
+  "message" : "Successfully selected My playlist."
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 2410,
-  "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 181,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 2410
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 2750,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 2750
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3100,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 3100
 } ]

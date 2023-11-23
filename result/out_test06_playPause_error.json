@@ -1,4 +1,9 @@
 [ {
+  "command" : "createPlaylist",
+  "user" : "emily30",
+  "timestamp" : 3210,
+  "message" : "Playlist created successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 3215,
@@ -14,6 +19,11 @@
   "user" : "emily30",
   "timestamp" : 3265,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "emily30",
+  "timestamp" : 3270,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -36,6 +46,12 @@
   "timestamp" : 3315,
   "message" : "Search returned 2 results",
   "results" : [ "TED Talks Daily", "TED-Ed: Lessons Worth Sharing" ]
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 3375,
+  "message" : "Search returned 1 results",
+  "results" : [ "LoFi music" ]
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -96,31 +112,20 @@
     "paused" : false
   }
 }, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 4015,
+  "message" : "Search returned 1 results",
+  "results" : [ "LoFi music" ]
+}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 4060,
-  "message" : "Successfully selected Shape of You."
-}, {
-  "command" : "load",
-  "user" : "emily30",
-  "timestamp" : 4105,
-  "message" : "Playback loaded successfully."
+  "message" : "Successfully selected LoFi music."
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 4170,
-  "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 168,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
-}, {
-  "command" : "load",
-  "user" : "emily30",
-  "timestamp" : 4245,
-  "message" : "Please select a source before attempting to load."
+  "timestamp" : 4170
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -137,10 +142,10 @@
   "user" : "emily30",
   "timestamp" : 4370,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 123,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 } ]

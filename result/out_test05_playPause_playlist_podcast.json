@@ -54,6 +54,11 @@
   "user" : "alice22",
   "timestamp" : 3201
 }, {
+  "command" : "createPlaylist",
+  "user" : "alice22",
+  "timestamp" : 3210,
+  "message" : "Playlist created successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 3215,
@@ -69,6 +74,11 @@
   "user" : "alice22",
   "timestamp" : 3225,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 3230,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -86,46 +96,31 @@
   "timestamp" : 3245,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 3250,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 3255,
+  "message" : "Search returned 1 results",
+  "results" : [ "2010 hits" ]
+}, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 3260,
-  "message" : "Successfully selected Happier."
-}, {
-  "command" : "load",
-  "user" : "alice22",
-  "timestamp" : 3265,
-  "message" : "Playback loaded successfully."
+  "message" : "Successfully selected 2010 hits."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 3270,
-  "stats" : {
-    "name" : "Happier",
-    "remainedTime" : 202,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 3270
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 3448,
-  "stats" : {
-    "name" : "Happier",
-    "remainedTime" : 24,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 3448
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 4000,
-  "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 4000
 } ]

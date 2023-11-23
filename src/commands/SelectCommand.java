@@ -7,6 +7,7 @@ import fileio.input.LibraryInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
 import main.Current;
+import main.Playlist;
 
 import java.util.ArrayList;
 
@@ -25,35 +26,54 @@ public final class SelectCommand extends Command {
     /**
      * methode used to execute select command
      */
-    public String generateSelect(final ArrayList<SongInput> matchingSongs,
-                                final ArrayList<PodcastInput> matchingPodcasts,
-                                Current current, final SelectCommand selectCommand) {
-        if (matchingSongs == null && matchingPodcasts == null) {
+    public String generateSelect(Current current, final SelectCommand selectCommand) {
+        if (current.getMatchingSongsSearch() == null && current.getWhatIsOn() == 1 ) {
+            return "Please conduct a search before making a selection.";
+        }
+        if (current.getMatchingPodcastsSearch() == null && current.getWhatIsOn() == 2 ) {
             return "Please conduct a search before making a selection.";
         }
 
-        if (matchingSongs != null && current.getWhatIsOn() == 1) {
+        if (current.getMatchingPlaylistsSearch() == null && current.getWhatIsOn() == 3 ) {
+            return "Please conduct a search before making a selection.";
+        }
+
+        if (current.getMatchingSongsSearch() != null && current.getWhatIsOn() == 1) {
             int item = selectCommand.getItemNumber();
-            if (item > matchingSongs.size()) {
+            if (item > current.getMatchingSongsSearch().size()) {
                 return "The selected ID is too high.";
+
             }
 
             String selectedSuccessfully;
-            SongInput song = matchingSongs.get(--item);
+            SongInput song = current.getMatchingSongsSearch().get(--item);
             current.setCurrentSong(song);
             current.setRemainedTime(song.getDuration());
             selectedSuccessfully = "Successfully selected " + song.getName() + ".";
             return selectedSuccessfully;
         }
 
-        if (matchingPodcasts != null && current.getWhatIsOn() == 2) {
+        if (current.getMatchingPlaylistsSearch() != null && current.getWhatIsOn() == 3 ) {
             int item = selectCommand.getItemNumber();
-            if (item > matchingPodcasts.size()) {
+            if (item > current.getMatchingPlaylistsSearch().size()) {
+                return "The selected ID is too high.";
+            }
+            String selectedSuccessfully;
+            Playlist playlist = current.getMatchingPlaylistsSearch().get(--item);
+            current.setCurrentPlaylist(playlist);
+            current.setRemainedTime(0);
+            selectedSuccessfully = "Successfully selected " + playlist.getPlaylistName() + ".";
+            return selectedSuccessfully;
+        }
+
+        if (current.getMatchingPodcastsSearch() != null && current.getWhatIsOn() == 2) {
+            int item = selectCommand.getItemNumber();
+            if (item > current.getMatchingPodcastsSearch().size()) {
                 return "The selected ID is too high.";
             }
 
             String selectedSuccessfully;
-            PodcastInput podcast = matchingPodcasts.get(--item);
+            PodcastInput podcast = current.getMatchingPodcastsSearch().get(--item);
             selectedSuccessfully = "Successfully selected " + podcast.getName() + ".";
             return selectedSuccessfully;
         }
@@ -71,7 +91,7 @@ public final class SelectCommand extends Command {
                                Current current,
                                final ObjectMapper objectMapper, final ArrayNode outputs) {
 
-        String select = selectCommand.generateSelect(matchingSongs, matchingPodcasts, current, selectCommand);
+        String select = selectCommand.generateSelect(current, selectCommand);
         ObjectNode selectedResult = objectMapper.createObjectNode();
 
         selectedResult.put("command", "select");

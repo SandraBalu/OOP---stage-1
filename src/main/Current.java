@@ -8,15 +8,34 @@ import java.util.ArrayList;
 public final class Current {
     private  SongInput currentSong;
     private PodcastInput currentPodcast;
+    private  Playlist currentPlaylist;
+
     private ArrayList<SongInput> matchingSongsSearch;
     private ArrayList<PodcastInput> matchingPodcastsSearch;
+    private  ArrayList<Playlist> matchingPlaylistsSearch;
     private int whatIsOn;
     private boolean plays;
+    private boolean isLoaded;
     private boolean shuffle;
     private int timestampAnt;
     private String antCommand;
     private int remainedTime;
 
+    public Playlist getCurrentPlaylist() {
+        return currentPlaylist;
+    }
+
+    public void setCurrentPlaylist(Playlist currentPlaylist) {
+        this.currentPlaylist = currentPlaylist;
+    }
+
+    public boolean isLoaded() {
+        return isLoaded;
+    }
+
+    public void setLoaded(boolean loaded) {
+        isLoaded = loaded;
+    }
 
     public int getRemainedTime() {
         return remainedTime;
@@ -48,6 +67,14 @@ public final class Current {
 
     public void setMatchingPodcastsSearch(ArrayList<PodcastInput> matchingPodcastsSearch) {
         this.matchingPodcastsSearch = matchingPodcastsSearch;
+    }
+
+    public ArrayList<Playlist> getMatchingPlaylistsSearch() {
+        return matchingPlaylistsSearch;
+    }
+
+    public void setMatchingPlaylistsSearch(ArrayList<Playlist> matchingPlaylistsSearch) {
+        this.matchingPlaylistsSearch = matchingPlaylistsSearch;
     }
 
     public int getTimestampAnt() {
