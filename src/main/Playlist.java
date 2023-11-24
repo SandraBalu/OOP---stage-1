@@ -14,14 +14,14 @@ public final class Playlist {
     private boolean visibility;
     private int followers;
     private int contorSongs;
-    private int numberOfSongs;
+    private int totalSongs;
 
-    public  int getNumberOfSongs() {
-        return numberOfSongs;
+    public  int getTotalSongs() {
+        return totalSongs;
     }
 
-    public void setNumberOfSongs(final int numberOfSongs) {
-        this.numberOfSongs = numberOfSongs;
+    public void setTotalSongs(final int totalSongs) {
+        this.totalSongs = totalSongs;
     }
 
     public int getContorSongs() {

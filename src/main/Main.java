@@ -151,6 +151,7 @@ public final class Main {
                 case "repeat":
                     RepeatCommand repeatCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(RepeatCommand.class));
+                    repeatCommand.executeRepeat(repeatCommand, current, objectMapper, outputs);
                     break;
                 case "shuffle":
                     ShuffleCommand shuffleCommand = objectMapper1.treeToValue(jsonNode,

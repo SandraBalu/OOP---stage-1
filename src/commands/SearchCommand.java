@@ -97,8 +97,9 @@ public final class SearchCommand extends Command {
                 if (filters.getLyrics() != null) {
                     index = 0;
                     for (SongInput song : songs) {
-                        if (song.getLyrics().contains(filters.getLyrics())
-                                && index < MAGIC_NUMBER) {
+
+                        if (song.getLyrics().toLowerCase().contains(filters.
+                                getLyrics().toLowerCase()) && index < MAGIC_NUMBER) {
                             matching.add(song);
                             index++;
                         }
@@ -315,6 +316,7 @@ public final class SearchCommand extends Command {
                         getMatchingPlaylistsSearch(), current.getMatchingPodcastsSearch());
 
         current.setAntCommand("search");
+        current.setRepeat("No Repeat");
         current.setTimestampAnt(searchCommand.getTimestamp());
         current.setLoaded(false);
         current.setPlays(false);

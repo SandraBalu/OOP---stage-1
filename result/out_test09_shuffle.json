@@ -183,19 +183,19 @@
   "user" : "bob35",
   "timestamp" : 1600,
   "stats" : {
-    "name" : "I Don't Wanna Live Forever",
-    "remainedTime" : -1,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 1660,
   "stats" : {
-    "name" : "Hustle Hard",
-    "remainedTime" : 171,
+    "name" : "I Don't Wanna Live Forever",
+    "remainedTime" : 184,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -205,8 +205,8 @@
   "user" : "bob35",
   "timestamp" : 2000,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 69,
+    "name" : "Hustle Hard",
+    "remainedTime" : 76,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false

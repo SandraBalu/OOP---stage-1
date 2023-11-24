@@ -32,6 +32,8 @@ public final class LoadCommand extends Command {
             selectedResult.put("timestamp", loadCommand.getTimestamp());
             selectedResult.put("message", "Playback loaded successfully.");
             outputs.add(selectedResult);
+            current.setTimestampAnt(loadCommand.getTimestamp());
+            current.setRepeat("No Repeat");
 
         } else {
             String error = "Please select a source before attempting to load.";
@@ -73,6 +75,7 @@ public final class LoadCommand extends Command {
         firstPodcast.setLastEpisodeSecond(0);
 
         current.setCurrentExtendedPodcast(firstPodcast);
+        current.setRepeatMode(0);
         loadedPodcasts.add(firstPodcast);
     }
 
@@ -101,13 +104,15 @@ public final class LoadCommand extends Command {
                        Playlist playlist = current.getCurrentPlaylist();
                        playlist.setContorSongs(0);
                        current.setCurrentPlaylist(playlist);
+                       current.setRepeatMode(0);
                    }
                }
             }
 
             current.setLoaded(true);
             current.setAntCommand("load");
-            current.setTimestampAnt(loadCommand.getTimestamp());
+//            current.setRepeatMode(0);
+//            current.setTimestampAnt(loadCommand.getTimestamp());
             current.setPlays(false);
 
     }

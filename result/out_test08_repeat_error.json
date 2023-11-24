@@ -5,6 +5,11 @@
   "message" : "Search returned 4 results",
   "results" : [ "The Unforgiven", "Sad But True", "Nothing Else Matters", "Enter Sandman" ]
 }, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 1035,
+  "message" : "Repeat mode changed to repeat once."
+}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1100,
@@ -26,26 +31,46 @@
     "paused" : false
   }
 }, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 1191,
+  "message" : "Repeat mode changed to repeat infinite."
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 1192,
+  "message" : "Repeat mode changed to no repeat."
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 2000,
+  "message" : "Repeat mode changed to repeat once."
+}, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 2100,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "The Unforgiven",
+    "remainedTime" : -208,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 2135,
+  "message" : "Repeat mode changed to repeat once."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 2200,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "The Unforgiven",
+    "remainedTime" : 78,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "search",
@@ -53,6 +78,11 @@
   "timestamp" : 2245,
   "message" : "Search returned 0 results",
   "results" : [ ]
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 2290,
+  "message" : "Repeat mode changed to repeat all."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -84,13 +114,18 @@
   "timestamp" : 3195,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3200,
+  "message" : "Repeat mode changed to repeat infinite."
+}, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 3220,
   "stats" : {
     "name" : "99 Problems",
     "remainedTime" : 209,
-    "repeat" : "No Repeat",
+    "repeat" : "Repeat Infinite",
     "shuffle" : false,
     "paused" : false
   }
@@ -106,10 +141,20 @@
   "message" : "Search returned 1 results",
   "results" : [ "My favourite songs" ]
 }, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3270,
+  "message" : "Repeat mode changed to no repeat."
+}, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 3290,
   "message" : "Successfully selected My favourite songs."
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3295,
+  "message" : "Repeat mode changed to repeat all."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -117,10 +162,15 @@
   "stats" : {
     "name" : "99 Problems",
     "remainedTime" : 214,
-    "repeat" : "No Repeat",
+    "repeat" : "Repeat All",
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3335,
+  "message" : "Repeat mode changed to repeat current song."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -128,7 +178,7 @@
   "stats" : {
     "name" : "99 Problems",
     "remainedTime" : 124,
-    "repeat" : "No Repeat",
+    "repeat" : "Repeat Current Song",
     "shuffle" : false,
     "paused" : false
   }
@@ -137,6 +187,11 @@
   "user" : "emily30",
   "timestamp" : 3405,
   "message" : "A playlist with the same name already exists."
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3435,
+  "message" : "Repeat mode changed to no repeat."
 }, {
   "command" : "status",
   "user" : "emily30",

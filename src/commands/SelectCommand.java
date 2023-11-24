@@ -116,8 +116,7 @@ public final class SelectCommand extends Command {
 
         current.setTimestampAnt(selectCommand.getTimestamp());
         current.setAntCommand("select");
-
-
+//        current.setRepeatMode(0);
     }
 
 }

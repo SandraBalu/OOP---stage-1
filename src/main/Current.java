@@ -10,7 +10,6 @@ public final class Current {
     private  SongInput currentSong;
     private PodcastInput currentPodcast;
     private  Playlist currentPlaylist;
-
     private ArrayList<SongInput> matchingSongsSearch;
     private ArrayList<PodcastInput> matchingPodcastsSearch;
     private  ArrayList<Playlist> matchingPlaylistsSearch;
@@ -21,7 +20,10 @@ public final class Current {
     private int timestampAnt;
     private String antCommand;
     private int remainedTime;
+    private int repeatMode;
 
+    private  int antRepeatMode;
+    private String repeat;
     private ExtendedPodcast currentExtendedPodcast;
 
     public ExtendedPodcast getCurrentExtendedPodcast() {
@@ -97,6 +99,30 @@ public final class Current {
 
     public SongInput getCurrentSong() {
         return currentSong;
+    }
+
+    public String getRepeat() {
+        return repeat;
+    }
+
+    public int getAntRepeatMode() {
+        return antRepeatMode;
+    }
+
+    public void setAntRepeatMode(final int antRepeatMode) {
+        this.antRepeatMode = antRepeatMode;
+    }
+
+    public void setRepeat(final String repeat) {
+        this.repeat = repeat;
+    }
+
+    public int getRepeatMode() {
+        return repeatMode;
+    }
+
+    public void setRepeatMode(final int repeatMode) {
+        this.repeatMode = repeatMode;
     }
 
     public void setCurrentSong(final SongInput currentSong) {
