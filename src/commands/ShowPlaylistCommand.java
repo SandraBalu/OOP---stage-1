@@ -11,9 +11,12 @@ import java.util.ArrayList;
 
 public final class ShowPlaylistCommand extends Command {
 
-    public final void displayPlaylists(ShowPlaylistCommand showPlaylistCommand,
-                                       ArrayList<Playlist> playlists,
-                                       ObjectMapper objectMapper, ArrayNode outputs) {
+    /**
+     * execute showPlaylistsCommand
+     */
+    public void displayPlaylists(final ShowPlaylistCommand showPlaylistCommand,
+                                 final ArrayList<Playlist> playlists,
+                                 final  ObjectMapper objectMapper, final ArrayNode outputs) {
 
         ObjectNode showPlaylistsResults = objectMapper.createObjectNode();
         showPlaylistsResults.put("command", "showPlaylists");

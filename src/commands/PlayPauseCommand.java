@@ -9,8 +9,12 @@ import main.Current;
 
 public final class PlayPauseCommand extends Command {
 
-    public void executePlayPause (PlayPauseCommand playPauseCommand, Current current, LibraryInput library,
-                                  ObjectMapper objectMapper, ArrayNode outputs) {
+    /**
+     * play/pause current audio
+     */
+    public void executePlayPause(final PlayPauseCommand playPauseCommand,
+                                  final Current current, final LibraryInput library,
+                                  final ObjectMapper objectMapper, final ArrayNode outputs) {
 
         if (current.getCurrentSong() != null || current.getCurrentPodcast() != null) {
 
@@ -22,14 +26,17 @@ public final class PlayPauseCommand extends Command {
             if (!current.isPlays()) {
                 playPauseResults .put("timestamp", playPauseCommand.getTimestamp());
                 playPauseResults .put("message", "Playback paused successfully.");
-                current.setRemainedTime(current.getRemainedTime() - playPauseCommand.getTimestamp() + current.getTimestampAnt());
+                current.setRemainedTime(current.getRemainedTime()
+                        - playPauseCommand.getTimestamp() + current.getTimestampAnt());
 
                 if (current.getWhatIsOn() == 2) {
                     if (current.getRemainedTime() <= 0) {
                         ExtendedPodcast update = current.getCurrentExtendedPodcast();
                         if (update.getLastEpisode() <= update.getPodcast().getEpisodes().size()) {
                             update.setLastEpisode(update.getLastEpisode() + 1);
-                            update.setRemainingDuration(update.getPodcast().getEpisodes().get(update.getLastEpisode()).getDuration() + current.getRemainedTime());
+                            update.setRemainingDuration(update.getPodcast().
+                                    getEpisodes().get(update.getLastEpisode()).getDuration()
+                                    + current.getRemainedTime());
                             update.setLastEpisodeSecond(-current.getRemainedTime());
                             current.setCurrentExtendedPodcast(update);
                             current.setRemainedTime(update.getRemainingDuration());
@@ -57,8 +64,9 @@ public final class PlayPauseCommand extends Command {
             playPauseResults .put("command", "playPause");
             playPauseResults .put("user", playPauseCommand.getUsername());
             playPauseResults .put("timestamp", playPauseCommand.getTimestamp());
-            playPauseResults .put("message", "Please load a source before attempting to pause or resume playback");
-            outputs.add(playPauseResults );
+            playPauseResults .put("message", "Please load a source before"
+                    + " attempting to pause or resume playback");
+            outputs.add(playPauseResults);
         }
 
     }

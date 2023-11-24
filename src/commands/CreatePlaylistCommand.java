@@ -18,11 +18,13 @@ public final class CreatePlaylistCommand extends Command {
         this.playlistName = playlistName;
     }
 
-
-    public void executeCreatePlaylist(CreatePlaylistCommand createPlaylistCommand,
-                                      ArrayList<Playlist> playlists,
-                                      Current current, ObjectMapper objectMapper,
-                                      ArrayNode outputs) {
+    /**
+     * create empty playlist
+     */
+    public void executeCreatePlaylist(final CreatePlaylistCommand createPlaylistCommand,
+                                      final ArrayList<Playlist> playlists,
+                                      final Current current, final ObjectMapper objectMapper,
+                                      final ArrayNode outputs) {
 
 
         if (playlists.size() == 0) {
@@ -42,7 +44,8 @@ public final class CreatePlaylistCommand extends Command {
                     createPlaylistResult.put("command", "createPlaylist");
                     createPlaylistResult.put("user", createPlaylistCommand.getUsername());
                     createPlaylistResult.put("timestamp", createPlaylistCommand.getTimestamp());
-                    createPlaylistResult.put("message", "A playlist with the same name already exists.");
+                    createPlaylistResult.put("message", "A playlist with "
+                                + "the same name already exists.");
 
                     outputs.add(createPlaylistResult);
                     return;

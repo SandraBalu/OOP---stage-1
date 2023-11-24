@@ -15,24 +15,20 @@ import java.util.ArrayList;
 public final class SearchCommand extends Command {
     private String type;
     private Filter filters;
-
     public String getType() {
         return type;
     }
-
     public void setType(final String type) {
         this.type = type;
     }
-
     public Filter getFilters() {
         return filters;
     }
-
     public void setFilters(final Filter filters) {
         this.filters = filters;
     }
-
     private static final int MAGIC_NUMBER = 5;
+    private static final int MAGIC_NUMBER_3 = 3;
 
     /**
      * method used to execute search command for song
@@ -188,7 +184,10 @@ public final class SearchCommand extends Command {
 
     }
 
-    public  final ArrayList<Playlist> searchPlaylist(final SearchCommand searchCommand,
+    /**
+     * search for playlists
+     */
+    public  ArrayList<Playlist> searchPlaylist(final SearchCommand searchCommand,
                                                      final  ArrayList<Playlist> playlists) {
 
         ArrayList<Playlist> matching = new ArrayList<>();
@@ -209,9 +208,9 @@ public final class SearchCommand extends Command {
         if (filters.getName() != null) {
             index = 0;
             for (Playlist playlist : playlists) {
-                if (playlist.getPlaylistName().startsWith(filters.getName()) && index < MAGIC_NUMBER) {
+                if (playlist.getPlaylistName().startsWith(filters.getName())
+                        && index < MAGIC_NUMBER) {
                     matching.add(playlist);
-                    ;
                     index++;
                 }
             }
@@ -281,11 +280,13 @@ public final class SearchCommand extends Command {
     /**
      * execute search
      */
-    public void executeSearch(SearchCommand searchCommand, Current current ,LibraryInput library,
-                              ArrayList<Playlist> playlists,
-                              ObjectMapper objectMapper, ArrayNode outputs) {
+    public void executeSearch(final SearchCommand searchCommand, final Current current,
+                              final LibraryInput library,
+                              final ArrayList<Playlist> playlists,
+                              final ObjectMapper objectMapper, final ArrayNode outputs) {
 
-        current.setRemainedTime(current.getRemainedTime() + current.getTimestampAnt() - searchCommand.getTimestamp());
+        current.setRemainedTime(current.getRemainedTime()
+                + current.getTimestampAnt() - searchCommand.getTimestamp());
         if (current.getCurrentExtendedPodcast() != null && current.getWhatIsOn() == 2) {
             ExtendedPodcast update = current.getCurrentExtendedPodcast();
             update.setRemainingDuration(current.getRemainedTime());
@@ -298,18 +299,20 @@ public final class SearchCommand extends Command {
 
         }
         if (searchCommand.getType().equals("podcast")) {
-            current.setMatchingPodcastsSearch(searchCommand.searchPodcast(searchCommand, library));
+            current.setMatchingPodcastsSearch(searchCommand.
+                    searchPodcast(searchCommand, library));
             current.setWhatIsOn(2);
         }
         if (searchCommand.getType().equals("playlist")) {
-            current.setMatchingPlaylistsSearch(searchCommand.searchPlaylist(searchCommand, playlists));
-            current.setWhatIsOn(3);
+            current.setMatchingPlaylistsSearch(searchCommand.
+                    searchPlaylist(searchCommand, playlists));
+            current.setWhatIsOn(MAGIC_NUMBER_3);
         }
 
         current.setLoaded(false);
         searchCommand.displaySearch(searchCommand, library, outputs,
-                objectMapper, current.getMatchingSongsSearch(),current.getMatchingPlaylistsSearch(),
-                        current.getMatchingPodcastsSearch());
+                objectMapper, current.getMatchingSongsSearch(), current.
+                        getMatchingPlaylistsSearch(), current.getMatchingPodcastsSearch());
 
         current.setAntCommand("search");
         current.setTimestampAnt(searchCommand.getTimestamp());

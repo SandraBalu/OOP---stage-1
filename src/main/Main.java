@@ -90,7 +90,7 @@ public final class Main {
         SongInput currentSong = new SongInput();
         PodcastInput currentPodcast = new PodcastInput();
         ArrayList<Playlist> playlists = new ArrayList<>();
-        ArrayList<ExtendedPodcast> loadedPodcasts= new ArrayList<>();
+        ArrayList<ExtendedPodcast> loadedPodcasts = new ArrayList<>();
         ArrayList<ExtendedUser> users = new ArrayList<>();
         ExtendedUser extendedUser = new ExtendedUser();
         extendedUser.loadUsers(users, library);
@@ -121,26 +121,30 @@ public final class Main {
                 case "search":
                     SearchCommand searchCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(SearchCommand.class));
-                    searchCommand.executeSearch(searchCommand, current, library, playlists, objectMapper, outputs);
+                    searchCommand.executeSearch(searchCommand, current,
+                                    library, playlists, objectMapper, outputs);
 
                     break;
                 case "load":
                     LoadCommand loadCommand = objectMapper1.treeToValue(jsonNode,
                                 typeFactory.constructType(LoadCommand.class));
-                    loadCommand.executeLoad(loadCommand,current, library, loadedPodcasts, objectMapper, outputs);
+                    loadCommand.executeLoad(loadCommand, current, library,
+                                    loadedPodcasts, objectMapper, outputs);
 
                     break;
                 case "select":
                     SelectCommand selectCommand = objectMapper1.treeToValue(jsonNode,
                                 typeFactory.constructType(SelectCommand.class));
-                    selectCommand.executeSelect(selectCommand, current, library, objectMapper, outputs);
+                    selectCommand.executeSelect(selectCommand, current,
+                                        library, objectMapper, outputs);
 
                     break;
 
                 case "playPause":
                     PlayPauseCommand playPause = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(PlayPauseCommand.class));
-                    playPause.executePlayPause(playPause, current, library, objectMapper, outputs);
+                    playPause.executePlayPause(playPause, current, library,
+                                        objectMapper, outputs);
 
                     break;
 
@@ -162,7 +166,8 @@ public final class Main {
                 case "like":
                     LikeCommand likeCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(LikeCommand.class));
-                    likeCommand.executeLike(likeCommand,current,users,objectMapper,outputs);
+                    likeCommand.executeLike(likeCommand, current, users,
+                                        objectMapper, outputs);
                     break;
                 case "next":
                     NextCommand nextCommand = objectMapper1.treeToValue(jsonNode,
@@ -176,13 +181,14 @@ public final class Main {
                     AddRemoveInPlaylistCommand addRmInPlaylist = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(AddRemoveInPlaylistCommand.class));
 
-                    addRmInPlaylist.executeAddRemoveInPlaylist(addRmInPlaylist, current, playlists,
-                                objectMapper, outputs);
+                    addRmInPlaylist.executeAddRemoveInPlaylist(addRmInPlaylist,
+                                current, playlists, objectMapper, outputs);
                     break;
                 case "status":
                     StatusCommand statusCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(StatusCommand.class));
-                    statusCommand.displayStatus(statusCommand, current, objectMapper,outputs);
+                    statusCommand.displayStatus(statusCommand, current,
+                                objectMapper, outputs);
                     break;
                 case "switchVisibility":
                     SwitchVisibilityCommand switchVisibility = objectMapper1.treeToValue(jsonNode,
@@ -195,12 +201,14 @@ public final class Main {
                 case "showPlaylists":
                     ShowPlaylistCommand showPlaylistCommand = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(ShowPlaylistCommand.class));
-                    showPlaylistCommand.displayPlaylists(showPlaylistCommand, playlists, objectMapper, outputs);
+                    showPlaylistCommand.displayPlaylists(showPlaylistCommand,
+                                        playlists, objectMapper, outputs);
                     break;
                 case "showPreferredSongs":
                     ShowPreferredSongsCommand preferredSongs = objectMapper1.treeToValue(jsonNode,
                             typeFactory.constructType(ShowPreferredSongsCommand.class));
-                    preferredSongs.executeShowLikedSongs(preferredSongs, users, objectMapper, outputs);
+                    preferredSongs.executeShowLikedSongs(preferredSongs, users,
+                                                objectMapper, outputs);
                     break;
                 case "getTop5Songs":
                     GetTop5SongsCommand getTop5SongsCommand = objectMapper1.treeToValue(jsonNode,

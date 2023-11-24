@@ -1,9 +1,7 @@
 package fileio.input;
 
-import java.util.ArrayList;
-
-public class ExtendedPodcast {
-    PodcastInput podcast;
+public final class ExtendedPodcast {
+    private PodcastInput podcast;
     private int lastEpisode;
     private int lastEpisodeSecond;
     private int remainingDuration;
@@ -12,7 +10,7 @@ public class ExtendedPodcast {
         return remainingDuration;
     }
 
-    public void setRemainingDuration(int remainingDuration) {
+    public void setRemainingDuration(final int remainingDuration) {
         this.remainingDuration = remainingDuration;
     }
 
@@ -20,7 +18,7 @@ public class ExtendedPodcast {
         return podcast;
     }
 
-    public void setPodcast(PodcastInput podcast) {
+    public void setPodcast(final PodcastInput podcast) {
         this.podcast = podcast;
     }
 
@@ -28,7 +26,7 @@ public class ExtendedPodcast {
         return lastEpisode;
     }
 
-    public void setLastEpisode(int lastEpisode) {
+    public void setLastEpisode(final int lastEpisode) {
         this.lastEpisode = lastEpisode;
     }
 
@@ -36,7 +34,7 @@ public class ExtendedPodcast {
         return lastEpisodeSecond;
     }
 
-    public void setLastEpisodeSecond(int lastEpisodeSecond) {
+    public void setLastEpisodeSecond(final int lastEpisodeSecond) {
         this.lastEpisodeSecond = lastEpisodeSecond;
     }
 }

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.SongInput;
 import main.Current;
 import main.Playlist;
-
-import java.awt.*;
 import java.util.ArrayList;
 
 public final class AddRemoveInPlaylistCommand extends Command {
@@ -21,9 +19,15 @@ public final class AddRemoveInPlaylistCommand extends Command {
         this.playlistId = playlistId;
     }
 
-    public final void executeAddRemoveInPlaylist(AddRemoveInPlaylistCommand addRemoveInPlaylistCommand,
-                                                 Current current, ArrayList<Playlist> playlists,
-                                                 ObjectMapper objectMapper, ArrayNode outputs) {
+
+    /**
+     * add/remove from current song from playlist given through id
+     */
+    public void executeAddRemoveInPlaylist(final AddRemoveInPlaylistCommand addRmInPlCm,
+                                           final Current current,
+                                           final ArrayList<Playlist> playlists,
+                                           final ObjectMapper objectMapper,
+                                           final ArrayNode outputs) {
 
         //a source was loaded
         if (current.isLoaded()) {
@@ -31,19 +35,19 @@ public final class AddRemoveInPlaylistCommand extends Command {
             if (current.getWhatIsOn() == 1) {
 
                 //current source is a song
-                if (addRemoveInPlaylistCommand.playlistId > playlists.size()) {
+                if (addRmInPlCm.playlistId > playlists.size()) {
                     // playlistId does not exists
                     ObjectNode addRemoveResult = objectMapper.createObjectNode();
                     addRemoveResult.put("command", "addRemoveInPlaylist");
-                    addRemoveResult.put("user", addRemoveInPlaylistCommand.getUsername());
-                    addRemoveResult.put("timestamp", addRemoveInPlaylistCommand.getTimestamp());
+                    addRemoveResult.put("user", addRmInPlCm.getUsername());
+                    addRemoveResult.put("timestamp", addRmInPlCm.getTimestamp());
                     addRemoveResult.put("message", "The specified playlist does not exist.");
                     outputs.add(addRemoveResult);
                     return;
 
                 } else {
                     // add in playlist
-                    Playlist playlistToExecute = playlists.remove(addRemoveInPlaylistCommand.getPlaylistId() - 1);
+                    Playlist playlistToExecute = playlists.remove(addRmInPlCm.getPlaylistId() - 1);
                     SongInput song = current.getCurrentSong();
 
                     if (!playlistToExecute.isEmpty()) {
@@ -52,22 +56,22 @@ public final class AddRemoveInPlaylistCommand extends Command {
                         if (playlistSongs.contains(song)) {
                             playlistSongs.remove(song);
                             playlistToExecute.setPlaylistSongs(playlistSongs);
-                            playlists.add(addRemoveInPlaylistCommand.getPlaylistId() - 1, playlistToExecute);
+                            playlists.add(addRmInPlCm.getPlaylistId() - 1, playlistToExecute);
                             ObjectNode addRemoveResult = objectMapper.createObjectNode();
                             addRemoveResult.put("command", "addRemoveInPlaylist");
-                            addRemoveResult.put("user", addRemoveInPlaylistCommand.getUsername());
-                            addRemoveResult.put("timestamp", addRemoveInPlaylistCommand.getTimestamp());
+                            addRemoveResult.put("user", addRmInPlCm.getUsername());
+                            addRemoveResult.put("timestamp", addRmInPlCm.getTimestamp());
                             addRemoveResult.put("message", "Successfully removed from playlist.");
                             outputs.add(addRemoveResult);
                             return;
                         } else {
                             playlistSongs.add(song);
                             playlistToExecute.setPlaylistSongs(playlistSongs);
-                            playlists.add(addRemoveInPlaylistCommand.getPlaylistId() - 1, playlistToExecute);
+                            playlists.add(addRmInPlCm.getPlaylistId() - 1, playlistToExecute);
                             ObjectNode addRemoveResult = objectMapper.createObjectNode();
                             addRemoveResult.put("command", "addRemoveInPlaylist");
-                            addRemoveResult.put("user", addRemoveInPlaylistCommand.getUsername());
-                            addRemoveResult.put("timestamp", addRemoveInPlaylistCommand.getTimestamp());
+                            addRemoveResult.put("user", addRmInPlCm.getUsername());
+                            addRemoveResult.put("timestamp", addRmInPlCm.getTimestamp());
                             addRemoveResult.put("message", "Successfully added to playlist.");
                             outputs.add(addRemoveResult);
                             return;
@@ -79,11 +83,11 @@ public final class AddRemoveInPlaylistCommand extends Command {
                         songs.add(song);
                         playlistToExecute.setPlaylistSongs(songs);
                         playlistToExecute.setEmpty(false);
-                        playlists.add(addRemoveInPlaylistCommand.getPlaylistId() - 1, playlistToExecute);
+                        playlists.add(addRmInPlCm.getPlaylistId() - 1, playlistToExecute);
                         ObjectNode addRemoveResult = objectMapper.createObjectNode();
                         addRemoveResult.put("command", "addRemoveInPlaylist");
-                        addRemoveResult.put("user", addRemoveInPlaylistCommand.getUsername());
-                        addRemoveResult.put("timestamp", addRemoveInPlaylistCommand.getTimestamp());
+                        addRemoveResult.put("user", addRmInPlCm.getUsername());
+                        addRemoveResult.put("timestamp", addRmInPlCm.getTimestamp());
                         addRemoveResult.put("message", "Successfully added to playlist.");
                         outputs.add(addRemoveResult);
                         return;
@@ -93,8 +97,8 @@ public final class AddRemoveInPlaylistCommand extends Command {
             } else {
                 ObjectNode addRemoveResult = objectMapper.createObjectNode();
                 addRemoveResult.put("command", "addRemoveInPlaylist");
-                addRemoveResult.put("user", addRemoveInPlaylistCommand.getUsername());
-                addRemoveResult.put("timestamp", addRemoveInPlaylistCommand.getTimestamp());
+                addRemoveResult.put("user", addRmInPlCm.getUsername());
+                addRemoveResult.put("timestamp", addRmInPlCm.getTimestamp());
                 addRemoveResult.put("message", "The loaded source is not a song.");
                 outputs.add(addRemoveResult);
             }
@@ -102,9 +106,10 @@ public final class AddRemoveInPlaylistCommand extends Command {
         } else {
             ObjectNode addRemoveResult = objectMapper.createObjectNode();
             addRemoveResult.put("command", "addRemoveInPlaylist");
-            addRemoveResult.put("user", addRemoveInPlaylistCommand.getUsername());
-            addRemoveResult.put("timestamp", addRemoveInPlaylistCommand.getTimestamp());
-            addRemoveResult.put("message", "Please load a source before adding to or removing from the playlist.");
+            addRemoveResult.put("user", addRmInPlCm.getUsername());
+            addRemoveResult.put("timestamp", addRmInPlCm.getTimestamp());
+            addRemoveResult.put("message", "Please load a source before "
+                                 +  "adding to or removing from the playlist.");
 
             outputs.add(addRemoveResult);
         }

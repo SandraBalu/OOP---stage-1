@@ -1,32 +1,26 @@
 package main;
 
 import fileio.input.SongInput;
-import fileio.input.UserInput;
 
 import java.util.ArrayList;
 
-public class Playlist {
+public final class Playlist {
 
     private String  username;
-
     private String playlistName;
-
     private ArrayList<SongInput> playlistSongs;
     private  int playlistId;
     private  boolean empty;
-
     private boolean visibility;
-
     private int followers;
     private int contorSongs;
-
     private int numberOfSongs;
 
-    public int getNumberOfSongs() {
+    public  int getNumberOfSongs() {
         return numberOfSongs;
     }
 
-    public void setNumberOfSongs(int numberOfSongs) {
+    public void setNumberOfSongs(final int numberOfSongs) {
         this.numberOfSongs = numberOfSongs;
     }
 
@@ -34,7 +28,7 @@ public class Playlist {
         return contorSongs;
     }
 
-    public void setContorSongs(int contorSongs) {
+    public void setContorSongs(final int contorSongs) {
         this.contorSongs = contorSongs;
     }
 
@@ -42,7 +36,7 @@ public class Playlist {
         return followers;
     }
 
-    public void setFollowers(int followers) {
+    public void setFollowers(final int followers) {
         this.followers = followers;
     }
 
@@ -50,7 +44,7 @@ public class Playlist {
         return empty;
     }
 
-    public void setEmpty(boolean empty) {
+    public void setEmpty(final boolean empty) {
         this.empty = empty;
     }
 
@@ -58,7 +52,7 @@ public class Playlist {
         return playlistId;
     }
 
-    public void setPlaylistId(int playlistId) {
+    public void setPlaylistId(final int playlistId) {
         this.playlistId = playlistId;
     }
 
@@ -66,7 +60,7 @@ public class Playlist {
         return visibility;
     }
 
-    public void setVisibility(boolean visibility) {
+    public void setVisibility(final boolean visibility) {
         this.visibility = visibility;
     }
 
@@ -74,7 +68,7 @@ public class Playlist {
         return username;
     }
 
-    public void setUsername(String username) {
+    public void setUsername(final String username) {
         this.username = username;
     }
 
@@ -82,7 +76,7 @@ public class Playlist {
         return playlistName;
     }
 
-    public void setPlaylistName(String playlistName) {
+    public void setPlaylistName(final String playlistName) {
         this.playlistName = playlistName;
     }
 
@@ -90,7 +84,7 @@ public class Playlist {
         return playlistSongs;
     }
 
-    public void setPlaylistSongs(ArrayList<SongInput> playlistSongs) {
+    public void setPlaylistSongs(final ArrayList<SongInput> playlistSongs) {
         this.playlistSongs = playlistSongs;
     }
 }

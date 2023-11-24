@@ -11,9 +11,12 @@ import java.util.ArrayList;
 
 public final class LikeCommand extends Command {
 
-    public final void executeLike(LikeCommand likeCommand, Current current,
-                                  ArrayList<ExtendedUser> extendedUsers, ObjectMapper objectMapper,
-                                  ArrayNode outputs) {
+    /**
+     * function that adds current audio users liked audios
+     */
+    public void executeLike(final LikeCommand likeCommand, final Current current,
+                            final ArrayList<ExtendedUser> extendedUsers,
+                            final ObjectMapper objectMapper, final ArrayNode outputs) {
 
         if (current.getAntCommand().equals("load")) {
             for (ExtendedUser user : extendedUsers) {

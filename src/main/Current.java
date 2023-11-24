@@ -28,7 +28,7 @@ public final class Current {
         return currentExtendedPodcast;
     }
 
-    public void setCurrentExtendedPodcast(ExtendedPodcast currentExtendedPodcast) {
+    public void setCurrentExtendedPodcast(final ExtendedPodcast currentExtendedPodcast) {
         this.currentExtendedPodcast = currentExtendedPodcast;
     }
 
@@ -36,7 +36,7 @@ public final class Current {
         return currentPlaylist;
     }
 
-    public void setCurrentPlaylist(Playlist currentPlaylist) {
+    public void setCurrentPlaylist(final Playlist currentPlaylist) {
         this.currentPlaylist = currentPlaylist;
     }
 
@@ -44,7 +44,7 @@ public final class Current {
         return isLoaded;
     }
 
-    public void setLoaded(boolean loaded) {
+    public void setLoaded(final boolean loaded) {
         isLoaded = loaded;
     }
 
@@ -52,7 +52,7 @@ public final class Current {
         return remainedTime;
     }
 
-    public void setRemainedTime(int remainedTime) {
+    public void setRemainedTime(final int remainedTime) {
         this.remainedTime = remainedTime;
     }
 
@@ -60,7 +60,7 @@ public final class Current {
         return antCommand;
     }
 
-    public void setAntCommand(String antCommand) {
+    public void setAntCommand(final String antCommand) {
         this.antCommand = antCommand;
     }
 
@@ -68,7 +68,7 @@ public final class Current {
         return matchingSongsSearch;
     }
 
-    public void setMatchingSongsSearch(ArrayList<SongInput> matchingSongsSearch) {
+    public void setMatchingSongsSearch(final ArrayList<SongInput> matchingSongsSearch) {
         this.matchingSongsSearch = matchingSongsSearch;
     }
 
@@ -76,7 +76,7 @@ public final class Current {
         return matchingPodcastsSearch;
     }
 
-    public void setMatchingPodcastsSearch(ArrayList<PodcastInput> matchingPodcastsSearch) {
+    public void setMatchingPodcastsSearch(final ArrayList<PodcastInput> matchingPodcastsSearch) {
         this.matchingPodcastsSearch = matchingPodcastsSearch;
     }
 
@@ -84,15 +84,14 @@ public final class Current {
         return matchingPlaylistsSearch;
     }
 
-    public void setMatchingPlaylistsSearch(ArrayList<Playlist> matchingPlaylistsSearch) {
+    public void setMatchingPlaylistsSearch(final ArrayList<Playlist> matchingPlaylistsSearch) {
         this.matchingPlaylistsSearch = matchingPlaylistsSearch;
     }
-
     public int getTimestampAnt() {
         return timestampAnt;
     }
 
-    public void setTimestampAnt(int timestampAnt) {
+    public void setTimestampAnt(final int timestampAnt) {
         this.timestampAnt = timestampAnt;
     }
 
@@ -100,7 +99,7 @@ public final class Current {
         return currentSong;
     }
 
-    public void setCurrentSong(SongInput currentSong) {
+    public void setCurrentSong(final SongInput currentSong) {
         this.currentSong = currentSong;
     }
 
@@ -108,7 +107,7 @@ public final class Current {
         return currentPodcast;
     }
 
-    public void setCurrentPodcast(PodcastInput currentPodcast) {
+    public void setCurrentPodcast(final PodcastInput currentPodcast) {
         this.currentPodcast = currentPodcast;
     }
 
@@ -116,7 +115,7 @@ public final class Current {
         return whatIsOn;
     }
 
-    public void setWhatIsOn(int whatIsOn) {
+    public void setWhatIsOn(final int whatIsOn) {
         this.whatIsOn = whatIsOn;
     }
 
@@ -124,7 +123,7 @@ public final class Current {
         return plays;
     }
 
-    public void setPlays(boolean plays) {
+    public void setPlays(final boolean plays) {
         this.plays = plays;
     }
 
@@ -132,7 +131,7 @@ public final class Current {
         return shuffle;
     }
 
-    public void setShuffle(boolean shuffle) {
+    public void setShuffle(final boolean shuffle) {
         this.shuffle = shuffle;
     }
 }

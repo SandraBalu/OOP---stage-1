@@ -12,12 +12,17 @@ import main.Playlist;
 
 import java.util.ArrayList;
 
+
 public final class LoadCommand extends Command {
+    private static final int MAGIC_NUMBER = 3;
 
 
+    /**
+     * display message for load
+     */
     public void  loadDisplay(final SongInput song, final LoadCommand loadCommand,
                              final String antCommand, final ObjectMapper objectMapper,
-                             final  ArrayNode outputs, Current current) {
+                             final  ArrayNode outputs, final Current current) {
 
         if (antCommand.equals("select")) {
 
@@ -40,14 +45,19 @@ public final class LoadCommand extends Command {
     }
 
 
-    private void loadPodcast(ArrayList<ExtendedPodcast> loadedPodcasts, Current current) {
+    /**
+     * load podcast
+     */
+
+    private void loadPodcast(final ArrayList<ExtendedPodcast> loadedPodcasts,
+                             final Current current) {
 
         PodcastInput podcastToLoad = current.getCurrentPodcast();
 
         if (loadedPodcasts != null) {
            // at least a podcast was loaded before
             //verify if the selected podcast was loaded before
-            for(ExtendedPodcast podcast : loadedPodcasts) {
+            for (ExtendedPodcast podcast : loadedPodcasts) {
                 if (podcast.getPodcast().getName().equals(current.getCurrentPodcast().getName())) {
                     //the current podcast was loaded before
                     current.setCurrentExtendedPodcast(podcast);
@@ -70,22 +80,24 @@ public final class LoadCommand extends Command {
      * execute load
      */
 
-    public void executeLoad(LoadCommand loadCommand, Current current, LibraryInput library,
-                            ArrayList<ExtendedPodcast> loadedPodcasts,
-                            ObjectMapper objectMapper, ArrayNode outputs) {
+    public void executeLoad(final LoadCommand loadCommand, final Current current,
+                            final LibraryInput library,
+                            final ArrayList<ExtendedPodcast> loadedPodcasts,
+                            final ObjectMapper objectMapper, final ArrayNode outputs) {
 
 
         loadCommand.loadDisplay(current.getCurrentSong(), loadCommand, current.getAntCommand(),
                 objectMapper, outputs, current);
 
-            if(current.getWhatIsOn() == 2 && current.getAntCommand().equals("select")) {
+            if (current.getWhatIsOn() == 2 && current.getAntCommand().equals("select")) {
                 loadCommand.loadPodcast(loadedPodcasts, current);
             }
 
-            if (current.getWhatIsOn() == 3) {
+            if (current.getWhatIsOn() == MAGIC_NUMBER) {
                if (current.getCurrentPlaylist() != null) {
                    if (current.getCurrentPlaylist().getPlaylistSongs() != null) {
-                       current.setMatchingSongsSearch(current.getCurrentPlaylist().getPlaylistSongs());
+                       current.setMatchingSongsSearch(current.
+                                getCurrentPlaylist().getPlaylistSongs());
                        Playlist playlist = current.getCurrentPlaylist();
                        playlist.setContorSongs(0);
                        current.setCurrentPlaylist(playlist);

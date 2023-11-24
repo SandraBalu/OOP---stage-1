@@ -11,11 +11,14 @@ import java.util.ArrayList;
 
 public final class ShowPreferredSongsCommand extends Command {
 
-    public void executeShowLikedSongs (ShowPreferredSongsCommand showPreferredSongsCommand,
-                                       ArrayList<ExtendedUser> users, ObjectMapper objectMapper,
-                                       ArrayNode outputs) {
+    /**
+     * for current user, show liked audios
+     */
+    public void executeShowLikedSongs(final ShowPreferredSongsCommand showPreferredSongsCommand,
+                                       final ArrayList<ExtendedUser> users,
+                                       final ObjectMapper objectMapper, final ArrayNode outputs) {
 
-        for(ExtendedUser user : users) {
+        for (ExtendedUser user : users) {
 
             if (user.getUserName().equals(showPreferredSongsCommand.getUsername())) {
 
@@ -25,7 +28,7 @@ public final class ShowPreferredSongsCommand extends Command {
                 preferredResult.put("timestamp", showPreferredSongsCommand.getTimestamp());
                 ObjectNode likedSongs = JsonNodeFactory.instance.objectNode();
 
-                if (user.getLikedSongs()!=null) {
+                if (user.getLikedSongs() != null) {
                     ArrayNode songArrayNode = likedSongs.putArray("songs");
                     for (SongInput song : user.getLikedSongs()) {
                         if (song != null) {

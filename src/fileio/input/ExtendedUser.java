@@ -4,7 +4,7 @@ import main.Playlist;
 
 import java.util.ArrayList;
 
-public class ExtendedUser {
+public final class ExtendedUser {
 
     private String userName;
     private ArrayList<SongInput>  likedSongs;
@@ -15,7 +15,7 @@ public class ExtendedUser {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public void setUserName(final String userName) {
         this.userName = userName;
     }
 
@@ -23,7 +23,7 @@ public class ExtendedUser {
         return likedSongs;
     }
 
-    public void setLikedSongs(ArrayList<SongInput> likedSongs) {
+    public void setLikedSongs(final ArrayList<SongInput> likedSongs) {
         this.likedSongs = likedSongs;
     }
 
@@ -31,11 +31,16 @@ public class ExtendedUser {
         return likedPlaylists;
     }
 
-    public void setLikedPlaylists(ArrayList<Playlist> likedPlaylists) {
+    public void setLikedPlaylists(final ArrayList<Playlist> likedPlaylists) {
         this.likedPlaylists = likedPlaylists;
     }
 
-    public  final  void loadUsers(ArrayList<ExtendedUser> extendedUsers, LibraryInput libraryInput) {
+    /**
+     * make a new array with the existing useers
+     */
+    public void loadUsers(final ArrayList<ExtendedUser> extendedUsers,
+                                  final LibraryInput libraryInput) {
+
         ArrayList<UserInput> users = libraryInput.getUsers();
         for (UserInput userInput : users) {
             ExtendedUser newUser = new ExtendedUser();
