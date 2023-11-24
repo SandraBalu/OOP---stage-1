@@ -150,7 +150,8 @@
   "user" : "bob35",
   "timestamp" : 800,
   "stats" : {
-    "remainedTime" : -60,
+    "name" : "Nothing Else Matters",
+    "remainedTime" : 329,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -160,7 +161,8 @@
   "user" : "bob35",
   "timestamp" : 900,
   "stats" : {
-    "remainedTime" : -160,
+    "name" : "Nothing Else Matters",
+    "remainedTime" : 229,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -170,7 +172,8 @@
   "user" : "bob35",
   "timestamp" : 1250,
   "stats" : {
-    "remainedTime" : -510,
+    "name" : "Elevate",
+    "remainedTime" : 104,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -180,7 +183,8 @@
   "user" : "bob35",
   "timestamp" : 1600,
   "stats" : {
-    "remainedTime" : -860,
+    "name" : "I Don't Wanna Live Forever",
+    "remainedTime" : -1,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -190,7 +194,8 @@
   "user" : "bob35",
   "timestamp" : 1660,
   "stats" : {
-    "remainedTime" : -920,
+    "name" : "Hustle Hard",
+    "remainedTime" : 171,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -200,7 +205,8 @@
   "user" : "bob35",
   "timestamp" : 2000,
   "stats" : {
-    "remainedTime" : -1260,
+    "name" : "Begin Again",
+    "remainedTime" : 69,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -210,10 +216,11 @@
   "user" : "bob35",
   "timestamp" : 2350,
   "stats" : {
-    "remainedTime" : -1610,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "search",
@@ -236,7 +243,8 @@
   "user" : "bob35",
   "timestamp" : 2410,
   "stats" : {
-    "remainedTime" : -57,
+    "name" : "Nothing Else Matters",
+    "remainedTime" : 332,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -246,7 +254,8 @@
   "user" : "bob35",
   "timestamp" : 2750,
   "stats" : {
-    "remainedTime" : -397,
+    "name" : "Crazy",
+    "remainedTime" : 306,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -256,7 +265,8 @@
   "user" : "bob35",
   "timestamp" : 3100,
   "stats" : {
-    "remainedTime" : -747,
+    "name" : "Elevate",
+    "remainedTime" : 181,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false

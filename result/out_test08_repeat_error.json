@@ -61,13 +61,7 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3100,
-  "stats" : {
-    "remainedTime" : -145,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 3100
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
@@ -121,7 +115,8 @@
   "user" : "emily30",
   "timestamp" : 3310,
   "stats" : {
-    "remainedTime" : -20,
+    "name" : "99 Problems",
+    "remainedTime" : 214,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -131,7 +126,8 @@
   "user" : "emily30",
   "timestamp" : 3400,
   "stats" : {
-    "remainedTime" : -110,
+    "name" : "99 Problems",
+    "remainedTime" : 124,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -146,7 +142,8 @@
   "user" : "emily30",
   "timestamp" : 3450,
   "stats" : {
-    "remainedTime" : -160,
+    "name" : "99 Problems",
+    "remainedTime" : 74,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false

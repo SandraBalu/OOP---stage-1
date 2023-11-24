@@ -4616,33 +4616,15 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5500,
-  "stats" : {
-    "remainedTime" : -8,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5500
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5510,
-  "stats" : {
-    "remainedTime" : -18,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5510
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5520,
-  "stats" : {
-    "remainedTime" : -28,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5520
 }, {
   "command" : "playPause",
   "user" : "david27",
@@ -4651,23 +4633,11 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5530,
-  "stats" : {
-    "remainedTime" : -38,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5530
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5540,
-  "stats" : {
-    "remainedTime" : -38,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5540
 }, {
   "command" : "playPause",
   "user" : "frank21",
@@ -4676,13 +4646,7 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5550,
-  "stats" : {
-    "remainedTime" : -38,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5550
 }, {
   "command" : "playPause",
   "user" : "grace25",
@@ -4691,13 +4655,7 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5560,
-  "stats" : {
-    "remainedTime" : -48,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5560
 }, {
   "command" : "playPause",
   "user" : "henry26",
@@ -4706,83 +4664,35 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5570,
-  "stats" : {
-    "remainedTime" : -48,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5570
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5580,
-  "stats" : {
-    "remainedTime" : -58,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5580
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5590,
-  "stats" : {
-    "remainedTime" : -68,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5590
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5590,
-  "stats" : {
-    "remainedTime" : -68,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5590
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5600,
-  "stats" : {
-    "remainedTime" : -78,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5600
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5610,
-  "stats" : {
-    "remainedTime" : -88,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5610
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5620,
-  "stats" : {
-    "remainedTime" : -98,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5620
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5620,
-  "stats" : {
-    "remainedTime" : -98,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5620
 }, {
   "command" : "playPause",
   "user" : "david27",
@@ -4791,53 +4701,23 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5630,
-  "stats" : {
-    "remainedTime" : -108,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5630
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5640,
-  "stats" : {
-    "remainedTime" : -108,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5640
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5650,
-  "stats" : {
-    "remainedTime" : -108,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5650
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5660,
-  "stats" : {
-    "remainedTime" : -108,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5660
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5670,
-  "stats" : {
-    "remainedTime" : -108,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5670
 }, {
   "command" : "playPause",
   "user" : "irene33",
@@ -4846,33 +4726,15 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5680,
-  "stats" : {
-    "remainedTime" : -108,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5680
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5690,
-  "stats" : {
-    "remainedTime" : -118,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5690
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5690,
-  "stats" : {
-    "remainedTime" : -118,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5690
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -4881,43 +4743,19 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5700,
-  "stats" : {
-    "remainedTime" : -128,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5700
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5710,
-  "stats" : {
-    "remainedTime" : -138,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5710
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5720,
-  "stats" : {
-    "remainedTime" : -148,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5720
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5730,
-  "stats" : {
-    "remainedTime" : -158,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5730
 }, {
   "command" : "playPause",
   "user" : "emily30",
@@ -4926,63 +4764,27 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5740,
-  "stats" : {
-    "remainedTime" : -168,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5740
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5750,
-  "stats" : {
-    "remainedTime" : -168,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5750
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5750,
-  "stats" : {
-    "remainedTime" : -168,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5750
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5760,
-  "stats" : {
-    "remainedTime" : -168,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5760
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5770,
-  "stats" : {
-    "remainedTime" : -168,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5770
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5780,
-  "stats" : {
-    "remainedTime" : -168,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5780
 }, {
   "command" : "like",
   "user" : "jack29",
@@ -4991,13 +4793,7 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5790,
-  "stats" : {
-    "remainedTime" : -168,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5790
 }, {
   "command" : "playPause",
   "user" : "alice22",
@@ -5006,23 +4802,11 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5800,
-  "stats" : {
-    "remainedTime" : -168,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5800
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5810,
-  "stats" : {
-    "remainedTime" : -178,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5810
 }, {
   "command" : "playPause",
   "user" : "carol19",
@@ -5031,23 +4815,11 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5820,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5820
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5830,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5830
 }, {
   "command" : "like",
   "user" : "emily30",
@@ -5056,93 +4828,39 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5840,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5840
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5850,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5850
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5850,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5850
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5860,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5860
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5860,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5860
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5870,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5870
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5870,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5870
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5880,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5880
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5890,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5890
 }, {
   "command" : "playPause",
   "user" : "alice22",
@@ -5151,13 +4869,7 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5900,
-  "stats" : {
-    "remainedTime" : -188,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5900
 }, {
   "command" : "like",
   "user" : "bob35",
@@ -5166,13 +4878,7 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5910,
-  "stats" : {
-    "remainedTime" : -198,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5910
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -5181,53 +4887,23 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5920,
-  "stats" : {
-    "remainedTime" : -208,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5920
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5930,
-  "stats" : {
-    "remainedTime" : -218,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5930
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5940,
-  "stats" : {
-    "remainedTime" : -228,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5940
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5950,
-  "stats" : {
-    "remainedTime" : -238,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5950
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5960,
-  "stats" : {
-    "remainedTime" : -248,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 5960
 }, {
   "command" : "playPause",
   "user" : "henry26",
@@ -5236,13 +4912,7 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5970,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5970
 }, {
   "command" : "like",
   "user" : "irene33",
@@ -5251,53 +4921,23 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5980,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5980
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5990,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5990
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5990,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 5990
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6000,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6000
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6010,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6010
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -5306,53 +4946,23 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6020,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6020
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6030,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6030
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6040,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6040
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6050,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6050
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6060,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6060
 }, {
   "command" : "playPause",
   "user" : "henry26",
@@ -5361,33 +4971,15 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6070,
-  "stats" : {
-    "remainedTime" : -258,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6070
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6080,
-  "stats" : {
-    "remainedTime" : -268,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6080
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6090,
-  "stats" : {
-    "remainedTime" : -278,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6090
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -5396,23 +4988,11 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6100,
-  "stats" : {
-    "remainedTime" : -288,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6100
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6110,
-  "stats" : {
-    "remainedTime" : -298,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6110
 }, {
   "command" : "playPause",
   "user" : "carol19",
@@ -5421,13 +5001,7 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6120,
-  "stats" : {
-    "remainedTime" : -308,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6120
 }, {
   "command" : "playPause",
   "user" : "david27",
@@ -5436,83 +5010,35 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6130,
-  "stats" : {
-    "remainedTime" : -308,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6130
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6140,
-  "stats" : {
-    "remainedTime" : -318,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6140
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6150,
-  "stats" : {
-    "remainedTime" : -328,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6150
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6160,
-  "stats" : {
-    "remainedTime" : -338,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6160
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6170,
-  "stats" : {
-    "remainedTime" : -348,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6170
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6180,
-  "stats" : {
-    "remainedTime" : -358,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6180
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6180,
-  "stats" : {
-    "remainedTime" : -358,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6180
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6190,
-  "stats" : {
-    "remainedTime" : -368,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6190
 }, {
   "command" : "playPause",
   "user" : "alice22",
@@ -5521,13 +5047,7 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6200,
-  "stats" : {
-    "remainedTime" : -378,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6200
 }, {
   "command" : "like",
   "user" : "bob35",
@@ -5536,13 +5056,7 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6210,
-  "stats" : {
-    "remainedTime" : -378,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6210
 }, {
   "command" : "playPause",
   "user" : "carol19",
@@ -5551,63 +5065,27 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6220,
-  "stats" : {
-    "remainedTime" : -378,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6220
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6230,
-  "stats" : {
-    "remainedTime" : -388,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6230
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6240,
-  "stats" : {
-    "remainedTime" : -398,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6240
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6250,
-  "stats" : {
-    "remainedTime" : -408,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6250
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6260,
-  "stats" : {
-    "remainedTime" : -418,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6260
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6270,
-  "stats" : {
-    "remainedTime" : -428,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6270
 }, {
   "command" : "playPause",
   "user" : "irene33",
@@ -5616,53 +5094,23 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6280,
-  "stats" : {
-    "remainedTime" : -438,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6280
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6290,
-  "stats" : {
-    "remainedTime" : -438,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6290
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6290,
-  "stats" : {
-    "remainedTime" : -438,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6290
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6300,
-  "stats" : {
-    "remainedTime" : -438,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6300
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6300,
-  "stats" : {
-    "remainedTime" : -438,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6300
 }, {
   "command" : "like",
   "user" : "bob35",
@@ -5671,13 +5119,7 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6310,
-  "stats" : {
-    "remainedTime" : -438,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6310
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -5686,13 +5128,7 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6320,
-  "stats" : {
-    "remainedTime" : -438,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6320
 }, {
   "command" : "playPause",
   "user" : "david27",
@@ -5701,63 +5137,27 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6330,
-  "stats" : {
-    "remainedTime" : -438,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6330
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6340,
-  "stats" : {
-    "remainedTime" : -448,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6340
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6350,
-  "stats" : {
-    "remainedTime" : -458,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6350
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6360,
-  "stats" : {
-    "remainedTime" : -468,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6360
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6370,
-  "stats" : {
-    "remainedTime" : -478,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6370
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6370,
-  "stats" : {
-    "remainedTime" : -478,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6370
 }, {
   "command" : "like",
   "user" : "irene33",
@@ -5766,23 +5166,11 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6380,
-  "stats" : {
-    "remainedTime" : -488,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6380
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6390,
-  "stats" : {
-    "remainedTime" : -498,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6390
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -5791,63 +5179,27 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6400,
-  "stats" : {
-    "remainedTime" : -508,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6400
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6410,
-  "stats" : {
-    "remainedTime" : -518,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6410
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6410,
-  "stats" : {
-    "remainedTime" : -518,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6410
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6420,
-  "stats" : {
-    "remainedTime" : -528,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6420
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6430,
-  "stats" : {
-    "remainedTime" : -538,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6430
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6440,
-  "stats" : {
-    "remainedTime" : -548,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6440
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -5856,43 +5208,19 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6450,
-  "stats" : {
-    "remainedTime" : -558,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6450
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6460,
-  "stats" : {
-    "remainedTime" : -568,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6460
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6470,
-  "stats" : {
-    "remainedTime" : -578,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6470
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6480,
-  "stats" : {
-    "remainedTime" : -588,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6480
 }, {
   "command" : "like",
   "user" : "jack29",
@@ -5901,13 +5229,7 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6490,
-  "stats" : {
-    "remainedTime" : -598,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6490
 }, {
   "command" : "playPause",
   "user" : "alice22",
@@ -5916,23 +5238,11 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6500,
-  "stats" : {
-    "remainedTime" : -608,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6500
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6510,
-  "stats" : {
-    "remainedTime" : -608,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6510
 }, {
   "command" : "playPause",
   "user" : "carol19",
@@ -5941,13 +5251,7 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6520,
-  "stats" : {
-    "remainedTime" : -608,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6520
 }, {
   "command" : "playPause",
   "user" : "david27",
@@ -5956,23 +5260,11 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6530,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6530
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6540,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6540
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -5981,63 +5273,27 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6550,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6550
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6560,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6560
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6570,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6570
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6580,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6580
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6590,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6590
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6590,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6590
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -6046,33 +5302,15 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6600,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6600
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6610,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6610
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6620,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6620
 }, {
   "command" : "like",
   "user" : "david27",
@@ -6081,23 +5319,11 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6630,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6630
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6640,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6640
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -6106,13 +5332,7 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6650,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6650
 }, {
   "command" : "playPause",
   "user" : "grace25",
@@ -6121,13 +5341,7 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6660,
-  "stats" : {
-    "remainedTime" : -618,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6660
 }, {
   "command" : "playPause",
   "user" : "henry26",
@@ -6136,23 +5350,11 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6670,
-  "stats" : {
-    "remainedTime" : -628,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6670
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6680,
-  "stats" : {
-    "remainedTime" : -628,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6680
 }, {
   "command" : "playPause",
   "user" : "jack29",
@@ -6161,23 +5363,11 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6690,
-  "stats" : {
-    "remainedTime" : -628,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6690
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6700,
-  "stats" : {
-    "remainedTime" : -638,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6700
 }, {
   "command" : "like",
   "user" : "bob35",
@@ -6186,83 +5376,35 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6710,
-  "stats" : {
-    "remainedTime" : -648,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6710
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6720,
-  "stats" : {
-    "remainedTime" : -658,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6720
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6730,
-  "stats" : {
-    "remainedTime" : -668,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6730
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6730,
-  "stats" : {
-    "remainedTime" : -668,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6730
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6740,
-  "stats" : {
-    "remainedTime" : -678,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6740
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6750,
-  "stats" : {
-    "remainedTime" : -688,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6750
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6760,
-  "stats" : {
-    "remainedTime" : -698,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6760
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6770,
-  "stats" : {
-    "remainedTime" : -708,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6770
 }, {
   "command" : "like",
   "user" : "irene33",
@@ -6271,63 +5413,27 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6780,
-  "stats" : {
-    "remainedTime" : -718,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6780
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6790,
-  "stats" : {
-    "remainedTime" : -728,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6790
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6800,
-  "stats" : {
-    "remainedTime" : -738,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6800
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6800,
-  "stats" : {
-    "remainedTime" : -738,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6800
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6810,
-  "stats" : {
-    "remainedTime" : -748,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6810
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6820,
-  "stats" : {
-    "remainedTime" : -758,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6820
 }, {
   "command" : "like",
   "user" : "david27",
@@ -6336,53 +5442,23 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6830,
-  "stats" : {
-    "remainedTime" : -768,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6830
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6840,
-  "stats" : {
-    "remainedTime" : -778,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6840
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6850,
-  "stats" : {
-    "remainedTime" : -788,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6850
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6850,
-  "stats" : {
-    "remainedTime" : -788,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6850
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6860,
-  "stats" : {
-    "remainedTime" : -798,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6860
 }, {
   "command" : "like",
   "user" : "henry26",
@@ -6391,13 +5467,7 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6870,
-  "stats" : {
-    "remainedTime" : -808,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6870
 }, {
   "command" : "like",
   "user" : "irene33",
@@ -6406,13 +5476,7 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6880,
-  "stats" : {
-    "remainedTime" : -818,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6880
 }, {
   "command" : "like",
   "user" : "jack29",
@@ -6421,23 +5485,11 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6890,
-  "stats" : {
-    "remainedTime" : -828,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6890
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6900,
-  "stats" : {
-    "remainedTime" : -838,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6900
 }, {
   "command" : "playPause",
   "user" : "bob35",
@@ -6446,13 +5498,7 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6910,
-  "stats" : {
-    "remainedTime" : -848,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6910
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -6461,33 +5507,15 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6920,
-  "stats" : {
-    "remainedTime" : -848,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6920
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6930,
-  "stats" : {
-    "remainedTime" : -848,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6930
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6930,
-  "stats" : {
-    "remainedTime" : -848,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6930
 }, {
   "command" : "playPause",
   "user" : "emily30",
@@ -6496,33 +5524,15 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6940,
-  "stats" : {
-    "remainedTime" : -848,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6940
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6950,
-  "stats" : {
-    "remainedTime" : -858,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6950
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6960,
-  "stats" : {
-    "remainedTime" : -868,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 6960
 }, {
   "command" : "playPause",
   "user" : "henry26",
@@ -6531,33 +5541,15 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6970,
-  "stats" : {
-    "remainedTime" : -878,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6970
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6980,
-  "stats" : {
-    "remainedTime" : -878,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6980
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6990,
-  "stats" : {
-    "remainedTime" : -878,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : true
-  }
+  "timestamp" : 6990
 }, {
   "command" : "search",
   "user" : "alice22",

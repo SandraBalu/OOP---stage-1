@@ -20,6 +20,16 @@ public class Playlist {
     private int followers;
     private int contorSongs;
 
+    private int numberOfSongs;
+
+    public int getNumberOfSongs() {
+        return numberOfSongs;
+    }
+
+    public void setNumberOfSongs(int numberOfSongs) {
+        this.numberOfSongs = numberOfSongs;
+    }
+
     public int getContorSongs() {
         return contorSongs;
     }

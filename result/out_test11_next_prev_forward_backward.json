@@ -119,7 +119,8 @@
   "user" : "bob35",
   "timestamp" : 655,
   "stats" : {
-    "remainedTime" : -5,
+    "name" : "Start Me Up",
+    "remainedTime" : 207,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -129,7 +130,8 @@
   "user" : "bob35",
   "timestamp" : 690,
   "stats" : {
-    "remainedTime" : -40,
+    "name" : "Start Me Up",
+    "remainedTime" : 172,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -139,7 +141,8 @@
   "user" : "bob35",
   "timestamp" : 711,
   "stats" : {
-    "remainedTime" : -61,
+    "name" : "Start Me Up",
+    "remainedTime" : 151,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -149,7 +152,8 @@
   "user" : "bob35",
   "timestamp" : 713,
   "stats" : {
-    "remainedTime" : -63,
+    "name" : "Start Me Up",
+    "remainedTime" : 149,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false

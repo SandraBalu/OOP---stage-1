@@ -151,7 +151,8 @@
   "user" : "bob35",
   "timestamp" : 3150,
   "stats" : {
-    "remainedTime" : -10,
+    "name" : "Blank Space",
+    "remainedTime" : 221,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -161,7 +162,8 @@
   "user" : "bob35",
   "timestamp" : 3200,
   "stats" : {
-    "remainedTime" : -60,
+    "name" : "Blank Space",
+    "remainedTime" : 171,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -171,7 +173,8 @@
   "user" : "bob35",
   "timestamp" : 3250,
   "stats" : {
-    "remainedTime" : -110,
+    "name" : "Blank Space",
+    "remainedTime" : 121,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -181,7 +184,8 @@
   "user" : "bob35",
   "timestamp" : 3270,
   "stats" : {
-    "remainedTime" : -130,
+    "name" : "Blank Space",
+    "remainedTime" : 101,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -191,7 +195,8 @@
   "user" : "bob35",
   "timestamp" : 3320,
   "stats" : {
-    "remainedTime" : -180,
+    "name" : "Blank Space",
+    "remainedTime" : 51,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -201,7 +206,8 @@
   "user" : "bob35",
   "timestamp" : 3370,
   "stats" : {
-    "remainedTime" : -230,
+    "name" : "Blank Space",
+    "remainedTime" : 1,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -211,19 +217,21 @@
   "user" : "bob35",
   "timestamp" : 3690,
   "stats" : {
-    "remainedTime" : -550,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 3740,
   "stats" : {
-    "remainedTime" : -600,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 } ]

@@ -152,7 +152,8 @@
   "user" : "alice22",
   "timestamp" : 3270,
   "stats" : {
-    "remainedTime" : -5,
+    "name" : "Freedom",
+    "remainedTime" : 173,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -162,7 +163,8 @@
   "user" : "alice22",
   "timestamp" : 3448,
   "stats" : {
-    "remainedTime" : -183,
+    "name" : "Happier",
+    "remainedTime" : 202,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -172,9 +174,10 @@
   "user" : "alice22",
   "timestamp" : 4000,
   "stats" : {
-    "remainedTime" : -735,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 } ]

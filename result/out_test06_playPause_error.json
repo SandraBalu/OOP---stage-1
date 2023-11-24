@@ -142,7 +142,8 @@
   "user" : "emily30",
   "timestamp" : 4170,
   "stats" : {
-    "remainedTime" : -65,
+    "name" : "Shape of You",
+    "remainedTime" : 168,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -168,10 +169,10 @@
   "user" : "emily30",
   "timestamp" : 4370,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Shape of You",
+    "remainedTime" : 73,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 } ]

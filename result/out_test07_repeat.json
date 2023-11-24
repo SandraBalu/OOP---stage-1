@@ -189,7 +189,8 @@
   "user" : "alice22",
   "timestamp" : 1035,
   "stats" : {
-    "remainedTime" : -7,
+    "name" : "99 Problems",
+    "remainedTime" : 227,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -199,7 +200,8 @@
   "user" : "alice22",
   "timestamp" : 1037,
   "stats" : {
-    "remainedTime" : -9,
+    "name" : "99 Problems",
+    "remainedTime" : 225,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -209,7 +211,8 @@
   "user" : "alice22",
   "timestamp" : 2099,
   "stats" : {
-    "remainedTime" : -1071,
+    "name" : "Butterfly Effect",
+    "remainedTime" : -647,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -219,7 +222,8 @@
   "user" : "alice22",
   "timestamp" : 2101,
   "stats" : {
-    "remainedTime" : -1073,
+    "name" : "Moves Like Jagger",
+    "remainedTime" : -448,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -229,7 +233,8 @@
   "user" : "alice22",
   "timestamp" : 2334,
   "stats" : {
-    "remainedTime" : -1306,
+    "name" : "Dream Chaser",
+    "remainedTime" : -476,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -239,19 +244,21 @@
   "user" : "alice22",
   "timestamp" : 2336,
   "stats" : {
-    "remainedTime" : -1308,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 3600,
   "stats" : {
-    "remainedTime" : -2572,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 } ]

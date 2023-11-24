@@ -10,6 +10,9 @@ import fileio.input.ExtendedPodcast;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
 import main.Current;
+import main.Playlist;
+
+import java.util.ArrayList;
 
 public final class StatusCommand extends Command {
 
@@ -88,30 +91,67 @@ public final class StatusCommand extends Command {
         } else if (current.getWhatIsOn() == 3 ) {
 
             ObjectNode statusFields = JsonNodeFactory.instance.objectNode();
+            if (current.getCurrentPlaylist() != null) {
 
-            if (current.getMatchingSongsSearch() != null) {
+                Playlist currentPlaylist = current.getCurrentPlaylist();
+                if (currentPlaylist.getPlaylistSongs() != null) {
 
-                if (!current.isPlays()) {
-                    current.setRemainedTime(current.getRemainedTime() - statusCommand.getTimestamp() + current.getTimestampAnt());
+                    ArrayList<SongInput> songs = currentPlaylist.getPlaylistSongs();
+                    if (currentPlaylist.getContorSongs() == 0) {
+
+                        if (songs.get(0) != null) {
+                            current.setRemainedTime(songs.get(0).getDuration());
+                            current.setCurrentSong(songs.get(0));
+                            currentPlaylist.setNumberOfSongs(currentPlaylist.getPlaylistSongs().size());
+                        }
+                        current.setCurrentPlaylist(currentPlaylist);
+                    }
+
+                    if (!current.isPlays()) {
+                        current.setRemainedTime(current.getRemainedTime() - statusCommand.getTimestamp() + current.getTimestampAnt());
+                    }
+
+                    if (current.getRemainedTime() > 0) {
+
+                        statusFields.put("name", current.getCurrentSong().getName());
+                        statusFields.put("remainedTime", current.getRemainedTime());
+                        statusFields.put("repeat", "No Repeat");
+                        statusFields.put("shuffle", current.isShuffle());
+                        statusFields.put("paused", current.isPlays());
+                        currentPlaylist.setContorSongs(currentPlaylist.getContorSongs() + 1);
+                        current.setCurrentPlaylist(currentPlaylist);
+                    } else {
+
+                        if (currentPlaylist.getContorSongs() <= currentPlaylist.getNumberOfSongs() - 1) {
+
+
+                            if (songs.get(currentPlaylist.getContorSongs()) != null) {
+
+                                current.setRemainedTime(songs.get(currentPlaylist.getContorSongs()).getDuration() +
+                                        current.getRemainedTime());
+                                statusFields.put("name", songs.get(currentPlaylist.getContorSongs()).getName());
+                                statusFields.put("remainedTime", current.getRemainedTime());
+                                statusFields.put("repeat", "No Repeat");
+                                statusFields.put("shuffle", current.isShuffle());
+                                statusFields.put("paused", current.isPlays());
+                                currentPlaylist.setContorSongs(currentPlaylist.getContorSongs() + 1);
+                                current.setCurrentPlaylist(currentPlaylist);
+                            }
+                        } else {
+                            current.setRemainedTime(0);
+                            current.setPlays(true);
+                            current.setCurrentSong(null);
+                            statusFields.put("name", "");
+                            statusFields.put("remainedTime", current.getRemainedTime());
+                            statusFields.put("repeat", "No Repeat");
+                            statusFields.put("shuffle", current.isShuffle());
+                            statusFields.put("paused", current.isPlays());
+                        }
+
+                    }
+
+                    statusResults.set("stats", statusFields);
                 }
-
-                if (current.getRemainedTime() > 0) {
-
-                    statusFields.put("name", current.getMatchingSongsSearch().size());
-                    statusFields.put("remainedTime", current.getRemainedTime());
-                    statusFields.put("repeat", "No Repeat");
-                    statusFields.put("shuffle", current.isShuffle());
-                    statusFields.put("paused", current.isPlays());
-                } else {
-
-                    //statusFields.put("name", current.getMatchingSongsSearch().get(0).getName());
-                    statusFields.put("remainedTime", current.getRemainedTime());
-                    statusFields.put("repeat", "No Repeat");
-                    statusFields.put("shuffle", current.isShuffle());
-                    statusFields.put("paused", current.isPlays());
-                }
-
-                statusResults.set("stats", statusFields);
             }
         }
         outputs.add(statusResults);
