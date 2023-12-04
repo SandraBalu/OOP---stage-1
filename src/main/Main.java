@@ -87,6 +87,7 @@ public final class Main {
         ArrayList<ExtendedUser> extendedUsers = new ArrayList<>();
 
         Current current = new Current();
+        current.setLoaded(false);
         SongInput currentSong = new SongInput();
         PodcastInput currentPodcast = new PodcastInput();
         ArrayList<Playlist> playlists = new ArrayList<>();

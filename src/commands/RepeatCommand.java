@@ -12,60 +12,73 @@ public final class RepeatCommand extends Command {
     /**
      * modify current repeat state
      */
-    public void executeRepeat(final RepeatCommand repeatCommand, final Current curent,
+    public void executeRepeat(final RepeatCommand repeatCommand, final Current current,
                                final ObjectMapper objectMapper, final ArrayNode outputs) {
 
+
         ObjectNode repeatdResult = objectMapper.createObjectNode();
-        if (curent.getRepeatMode() == 0) {
-            curent.setRepeatMode(curent.getRepeatMode() + 1);
-            curent.setAntRepeatMode(0);
+        current.setTimestampAnt(repeatCommand.getTimestamp() - 1);
 
-            if (curent.getWhatIsOn() == MAGIC_NUMBER) {
-                curent.setRepeat("Repeat All");
+        if (current.getAntCommand().equals("search")){
+
+            repeatdResult.put("command", "repeat");
+            repeatdResult.put("user", repeatCommand.getUsername());
+            repeatdResult.put("timestamp", repeatCommand.getTimestamp());
+            repeatdResult.put("message", "Please load a source before setting the repeat status.");
+
+            outputs.add(repeatdResult);
+            return;
+        }
+        if (current.getRepeatMode() == 0) {
+            current.setRepeatMode(current.getRepeatMode() + 1);
+            current.setAntRepeatMode(0);
+
+            if (current.getWhatIsOn() == MAGIC_NUMBER) {
+                current.setRepeat("Repeat All");
             } else {
-                curent.setRepeat("Repeat Once");
+                current.setRepeat("Repeat Once");
             }
             repeatdResult.put("command", "repeat");
             repeatdResult.put("user", repeatCommand.getUsername());
             repeatdResult.put("timestamp", repeatCommand.getTimestamp());
             repeatdResult.put("message", "Repeat mode changed to "
-                    + curent.getRepeat().toLowerCase() + ".");
+                    + current.getRepeat().toLowerCase() + ".");
 
             outputs.add(repeatdResult);
             return;
 
         }
 
-        if (curent.getRepeatMode() == 1) {
-            curent.setRepeatMode(curent.getRepeatMode() + 1);
-            curent.setAntRepeatMode(1);
+        if (current.getRepeatMode() == 1) {
+            current.setRepeatMode(current.getRepeatMode() + 1);
+            current.setAntRepeatMode(1);
 
-            if (curent.getWhatIsOn() == MAGIC_NUMBER) {
-                curent.setRepeat("Repeat Current Song");
+            if (current.getWhatIsOn() == MAGIC_NUMBER) {
+                current.setRepeat("Repeat Current Song");
             } else {
-                curent.setRepeat("Repeat Infinite");
+                current.setRepeat("Repeat Infinite");
             }
             repeatdResult.put("command", "repeat");
             repeatdResult.put("user", repeatCommand.getUsername());
             repeatdResult.put("timestamp", repeatCommand.getTimestamp());
             repeatdResult.put("message", "Repeat mode changed to "
-                    + curent.getRepeat().toLowerCase() + ".");
+                    + current.getRepeat().toLowerCase() + ".");
 
             outputs.add(repeatdResult);
             return;
 
         }
 
+        if (current.getRepeatMode() == 2) {
+            current.setRepeatMode(0);
+            current.setAntRepeatMode(2);
 
-        if (curent.getRepeatMode() == 2) {
-            curent.setRepeatMode(0);
-            curent.setAntRepeatMode(2);
-            curent.setRepeat("No Repeat");
+            current.setRepeat("No Repeat");
             repeatdResult.put("command", "repeat");
             repeatdResult.put("user", repeatCommand.getUsername());
             repeatdResult.put("timestamp", repeatCommand.getTimestamp());
             repeatdResult.put("message", "Repeat mode changed to "
-                    + curent.getRepeat().toLowerCase() + ".");
+                    + current.getRepeat().toLowerCase() + ".");
 
             outputs.add(repeatdResult);
             return;
@@ -76,7 +89,7 @@ public final class RepeatCommand extends Command {
         repeatdResult.put("user", repeatCommand.getUsername());
         repeatdResult.put("timestamp", repeatCommand.getTimestamp());
         repeatdResult.put("message", "Repeat mode changed to "
-                + curent.getRepeat().toLowerCase() + ".");
+                + current.getRepeat().toLowerCase() + ".");
 
         outputs.add(repeatdResult);
     }

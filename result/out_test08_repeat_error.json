@@ -8,7 +8,7 @@
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 1035,
-  "message" : "Repeat mode changed to repeat once."
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -34,24 +34,35 @@
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 1191,
-  "message" : "Repeat mode changed to repeat infinite."
+  "message" : "Repeat mode changed to repeat once."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 1190,
+  "stats" : {
+    "name" : "The Unforgiven",
+    "remainedTime" : 316,
+    "repeat" : "Repeat Once",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 1192,
-  "message" : "Repeat mode changed to no repeat."
+  "message" : "Repeat mode changed to repeat infinite."
 }, {
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 2000,
-  "message" : "Repeat mode changed to repeat once."
+  "message" : "Repeat mode changed to no repeat."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 2100,
   "stats" : {
     "name" : "The Unforgiven",
-    "remainedTime" : -208,
+    "remainedTime" : 215,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -67,8 +78,8 @@
   "timestamp" : 2200,
   "stats" : {
     "name" : "The Unforgiven",
-    "remainedTime" : 78,
-    "repeat" : "No Repeat",
+    "remainedTime" : 149,
+    "repeat" : "Repeat Once",
     "shuffle" : false,
     "paused" : false
   }
@@ -82,7 +93,7 @@
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 2290,
-  "message" : "Repeat mode changed to repeat all."
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -124,7 +135,7 @@
   "timestamp" : 3220,
   "stats" : {
     "name" : "99 Problems",
-    "remainedTime" : 209,
+    "remainedTime" : 213,
     "repeat" : "Repeat Infinite",
     "shuffle" : false,
     "paused" : false
@@ -144,7 +155,7 @@
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 3270,
-  "message" : "Repeat mode changed to no repeat."
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -154,33 +165,33 @@
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 3295,
-  "message" : "Repeat mode changed to repeat all."
+  "message" : "Repeat mode changed to no repeat."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 3310,
   "stats" : {
-    "name" : "99 Problems",
-    "remainedTime" : 214,
-    "repeat" : "Repeat All",
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 3335,
-  "message" : "Repeat mode changed to repeat current song."
+  "message" : "Repeat mode changed to repeat all."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 3400,
   "stats" : {
     "name" : "99 Problems",
-    "remainedTime" : 124,
-    "repeat" : "Repeat Current Song",
+    "remainedTime" : 234,
+    "repeat" : "Repeat All",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "createPlaylist",
@@ -191,16 +202,16 @@
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 3435,
-  "message" : "Repeat mode changed to no repeat."
+  "message" : "Repeat mode changed to repeat current song."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 3450,
   "stats" : {
     "name" : "99 Problems",
-    "remainedTime" : 74,
-    "repeat" : "No Repeat",
+    "remainedTime" : 234,
+    "repeat" : "Repeat Current Song",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 } ]

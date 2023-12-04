@@ -28,17 +28,17 @@ public final class StatusCommand extends Command {
         statusResults.put("timestamp", statusCommand.getTimestamp());
 
         if (current.getWhatIsOn() == 1) {
+            ObjectNode statusFields = JsonNodeFactory.instance.objectNode();
+         //statusFields.put("remainedTime ant", current.getRemainedTime());
 
             SongInput currentSong = current.getCurrentSong();
-
             if (!current.isPlays()) {
                 current.setRemainedTime(current.getRemainedTime()
                         - statusCommand.getTimestamp() + current.getTimestampAnt());
             }
 
-            ObjectNode statusFields = JsonNodeFactory.instance.objectNode();
-
             if (current.getRemainedTime() > 0) {
+
                 statusFields.put("name", currentSong.getName());
                 statusFields.put("remainedTime", current.getRemainedTime());
                 statusFields.put("repeat", current.getRepeat());
@@ -47,20 +47,25 @@ public final class StatusCommand extends Command {
                 current.setCurrentSong(currentSong);
             } else {
                 if (current.getRepeatMode() == 1) {
-                    current.setRemainedTime(currentSong.getDuration() + current.getRemainedTime());
-                    current.setRepeat("No Repeat");
-                    current.setRepeatMode(0);
-                    statusFields.put("name", currentSong.getName());
-                    statusFields.put("remainedTime", current.getRemainedTime());
-                    statusFields.put("repeat", current.getRepeat());
-                    statusFields.put("shuffle", current.isShuffle());
-                    statusFields.put("paused", current.isPlays());
+                    if (currentSong != null) {
+
+                        current.setRemainedTime(currentSong.getDuration() + current.getRemainedTime());
+                        current.setRepeat("No Repeat");
+                        current.setRepeatMode(0);
+                        statusFields.put("name", currentSong.getName());
+                        statusFields.put("remainedTime", current.getRemainedTime());
+                        statusFields.put("repeat", current.getRepeat());
+                        statusFields.put("shuffle", current.isShuffle());
+                        statusFields.put("paused", current.isPlays());
+                    }
                 } else if (current.getRepeatMode() == 2) {
+
 
                     while (current.getRemainedTime() < 0) {
                         current.setRemainedTime(currentSong.getDuration()
                                 + current.getRemainedTime());
                     }
+
 
                     statusFields.put("name", currentSong.getName());
                     statusFields.put("remainedTime", current.getRemainedTime());
@@ -69,6 +74,17 @@ public final class StatusCommand extends Command {
                     statusFields.put("paused", current.isPlays());
 
                 } else  if (current.getRepeatMode() == 0) {
+
+                    if (current.getRemainedTime() > 0) {
+
+                        statusFields.put("name", currentSong.getName());
+                        statusFields.put("remainedTime", current.getRemainedTime());
+                        statusFields.put("repeat", current.getRepeat());
+                        statusFields.put("shuffle", current.isShuffle());
+                        statusFields.put("paused", current.isPlays());
+
+                        return;
+                    }
                     current.setRemainedTime(0);
                     current.setPlays(true);
                     current.setCurrentSong(null);

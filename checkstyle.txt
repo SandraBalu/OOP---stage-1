@@ -1,10 +1,12 @@
 Starting audit...
 [ERROR] /home/sandra/Desktop/Poo-etapa1/./src/main/Main.java:11:16: Using the '.*' form of import should be avoided - commands.*. [AvoidStarImport]
 [ERROR] /home/sandra/Desktop/Poo-etapa1/./src/main/Main.java:12:20: Using the '.*' form of import should be avoided - fileio.input.*. [AvoidStarImport]
-[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/main/Main.java:75:5: Method length is 155 lines (max allowed is 150). [MethodLength]
-[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/StatusCommand.java:21:5: Method length is 251 lines (max allowed is 150). [MethodLength]
-[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/StatusCommand.java:230: Line is longer than 100 characters (found 101). [LineLength]
-[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/StatusCommand.java:232: Line is longer than 100 characters (found 105). [LineLength]
+[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/main/Main.java:75:5: Method length is 156 lines (max allowed is 150). [MethodLength]
+[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/StatusCommand.java:21:5: Method length is 267 lines (max allowed is 150). [MethodLength]
+[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/StatusCommand.java:52: Line is longer than 100 characters (found 103). [LineLength]
+[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/StatusCommand.java:246: Line is longer than 100 characters (found 101). [LineLength]
+[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/StatusCommand.java:248: Line is longer than 100 characters (found 105). [LineLength]
 [ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/SearchCommand.java:41:16: 'filters' hides a field. [HiddenField]
+[ERROR] /home/sandra/Desktop/Poo-etapa1/./src/commands/RepeatCommand.java:22:54: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 9 errors.
