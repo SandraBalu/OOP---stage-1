@@ -3,7 +3,8 @@
 #### Assignment Link: [https://ocw.cs.pub.ro/courses/poo-ca-cd/teme/proiect/etapa1](https://ocw.cs.pub.ro/courses/poo-ca-cd/teme/proiect/etapa1)
 
 ## General description of the project
-    For this project, an application similar in functionality to Spotify is 
+
+For this project, an application similar in functionality to Spotify is 
 being implemented, simulating different actions made by users. These actions
 will be simulated using some commands received in Json input files.
    To execute commands, a foundational command class is designed, comprising
